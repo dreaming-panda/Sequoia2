@@ -69,7 +69,7 @@ target_verify_time = [
 0.024010971212387086,
 0.02513006410598755
                     ]
-valid_budget = [64]
+valid_budget = [32]
 
 dec_time = torch.inf
 pairs = None
@@ -137,7 +137,7 @@ grow_map = {
     "size": num_nodes
 }
 
-path = "./growmaps/A100-CNN-68m-7b-stochastic-64.pt"
+path = "./growmaps/A100-CNN-68m-7b-stochastic-32.pt"
 
 torch.save(grow_map, path)
 
