@@ -8,7 +8,7 @@ from torch.nn.functional import softmax
 import accelerate
 from accelerate import Accelerator
 import argparse
-from data_converter import convert_dataset, convert_wiki_dataset, convert_cnn_dataset
+from data_converter import convert_dataset, convert_wiki_dataset, convert_cnn_dataset, convert_c4_dataset_eval
 import argparse
 from SpecTree import SpecTree
 from Llama import LlamaForCausalLM_Attn
@@ -91,7 +91,7 @@ def simulation_greedy_with_tree_fast(target_model : GraphInferenceEngineTG, draf
             total_time += (t2 - t1)
             draft_model.clear_kv()
             target_model.clear_kv()
-    print("total time :{:.5f}s, latency :{:.5f}s, decoding step: {}, large model step: {}".format(total_time, total_time / num_decoding_steps, num_decoding_steps, num_large_model_steps))
+    print("total time :{:.5f}s, latency :{:.5f}s, decoding step: {}, large model step: {}, {}".format(total_time, total_time / num_decoding_steps, num_decoding_steps, num_large_model_steps, num_decoding_steps/num_large_model_steps))
     return num_decoding_steps / num_large_model_steps
 
 
@@ -224,14 +224,19 @@ def simulation_greedy_with_tree_fast_benchmark(target_model : GraphInferenceEngi
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf", use_fast=False)
 tokenizer.pad_token = tokenizer.eos_token
 #tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+eval_list = list(range(2000))
+import random
+random.shuffle(eval_list)
+
+#tokenizer.add_special_tokens({'pad_token': '[PAD]'})
 if args.dataset == 'openwebtext':
-    tokenized_dataset_eval = load_from_disk("dataset/openwebtext_eval").select(list(range(args.start, args.end)))
+    tokenized_dataset_eval = load_from_disk("dataset/openwebtext_eval").select(eval_list[args.start :args.end])
 elif args.dataset == 'wiki':
-    tokenized_dataset_eval = convert_wiki_dataset(tokenizer=tokenizer).select(list(range(args.start, args.end)))
+    tokenized_dataset_eval = convert_wiki_dataset(tokenizer=tokenizer).select(eval_list[args.start :args.end])
 elif args.dataset == 'cnn':
-    tokenized_dataset_eval = convert_cnn_dataset(tokenizer=tokenizer).select(list(range(args.start, args.end)))
+    tokenized_dataset_eval = convert_cnn_dataset(tokenizer=tokenizer).select(list(range(200)))
 else:
-    tokenized_dataset_eval = convert_dataset(tokenizer=tokenizer,file_path=args.dataset).select(list(range(args.start, args.end)))
+    tokenized_dataset_eval = convert_c4_dataset_eval(tokenizer=tokenizer).select(eval_list[args.start :args.end])
 
 data_collator = DataCollatorForLanguageModeling(tokenizer, mlm=False)
 dataloader = DataLoader(tokenized_dataset_eval, batch_size=1, collate_fn=data_collator, shuffle=False)

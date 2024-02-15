@@ -57,18 +57,18 @@ for m in tqdm(range(2, max_budget+1)):
 
 results = T.max(dim=2).values
 print(results)
-draft_inference_time = 0.0003
+draft_inference_time = 0.0004
 sample_time = 0.000
 constant_overhead = 0.00
 target_verify_time = [
-                 0.025806847095489503,
-0.026505699634552002,
-0.026361295700073242,
-0.026912063598632813,
-0.027045301914215086,
-0.02719782257080078,
-0.02648020601272583,
-0.02948155355453491
+0.023085911774635315,
+0.02392150526046753,
+0.023667326164245606,
+0.024343583154678345,
+0.0244464688539505,
+0.02465035092830658,
+0.024010971212387086,
+0.02513006410598755
                     ]
 
 
@@ -141,7 +141,7 @@ grow_map = {
     "size": num_nodes
 }
 
-path = "./growmaps/L40-C4-68m-7b-greedy.pt"
+path = "./growmaps/A100-C4-68m-7b-greedy.pt"
 
 torch.save(grow_map, path)
 

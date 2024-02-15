@@ -115,7 +115,7 @@ def convert_c4_dataset(tokenizer, seq_len = 256):
     #dataset.save_to_disk("/home/zhuominc/SpeculativeDecoding/data/c4_train")
     return dataset
 def convert_wiki_dataset(tokenizer, seq_len = 256):
-    dataset = load_dataset("wikimedia/wikipedia", "20231101.en", split="train[0:2000]", cache_dir="/scratch/dataset")
+    dataset = load_dataset("wikimedia/wikipedia", "20231101.en", split="train[0:2000]")
     def tokenize_function(examples):
             return tokenizer(examples["text"], return_tensors='pt',max_length=seq_len,padding=True,truncation=True)
     dataset = dataset.map(tokenize_function, batched=True, remove_columns=['text'])
@@ -124,7 +124,7 @@ def convert_wiki_dataset(tokenizer, seq_len = 256):
     return dataset
 
 def convert_cnn_dataset(tokenizer, seq_len = 256):
-    dataset = load_dataset("cnn_dailymail", "1.0.0", split="test[0:2000]", cache_dir="/scratch/dataset")
+    dataset = load_dataset("cnn_dailymail", "1.0.0", split="test[0:2000]")
     def tokenize_function(examples):
             return tokenizer(examples["article"], return_tensors='pt',max_length=seq_len,padding=True,truncation=True)
     dataset = dataset.map(tokenize_function, batched=True, remove_columns=['article'])
@@ -142,7 +142,7 @@ def convert_gptprompt_dataset(tokenizer, seq_len = 256):
     return dataset
 
 def convert_c4_dataset_eval(tokenizer, seq_len = 256):
-    dataset = load_dataset("c4", "realnewslike", split="validation[0:100]")
+    dataset = load_dataset("c4", "en", split="validation[0:2000]")
     def tokenize_function(examples):
             return tokenizer(examples["text"], return_tensors='pt',max_length=seq_len,padding=True,truncation=True)
     dataset = dataset.map(tokenize_function, batched=True, remove_columns=['text', 'timestamp', 'url'])

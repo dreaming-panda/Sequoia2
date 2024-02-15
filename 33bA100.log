@@ -1,0 +1,8 @@
+Max Length :384, Decode Length :1, Prefix Length :192, inference time:0.052310295343399045s
+Max Length :384, Decode Length :2, Prefix Length :192, inference time:0.05358581018447876s
+Max Length :384, Decode Length :4, Prefix Length :192, inference time:0.054559799671173095s
+Max Length :384, Decode Length :8, Prefix Length :192, inference time:0.05556274938583374s
+Max Length :384, Decode Length :16, Prefix Length :192, inference time:0.057551119565963746s
+Max Length :384, Decode Length :32, Prefix Length :192, inference time:0.05863354706764221s
+Max Length :384, Decode Length :64, Prefix Length :192, inference time:0.061939607143402096s
+Max Length :384, Decode Length :128, Prefix Length :192, inference time:0.08187625646591186s

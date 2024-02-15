@@ -1,7 +1,7 @@
 import torch
 
-k = 5
-s = 8
+k = 32
+s = 16
 
 m = k * s + 1
 l = s + 1
@@ -63,6 +63,6 @@ grow_map = {
     "size": num_nodes
 }
 
-path = "./growmaps/5x8-tree.pt"
+path = "./growmaps/32x16-tree.pt"
 
 torch.save(grow_map, path)

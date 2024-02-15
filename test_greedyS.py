@@ -8,7 +8,7 @@ from torch.nn.functional import softmax
 import accelerate
 from accelerate import Accelerator
 import argparse
-from data_converter import convert_dataset
+from data_converter import convert_dataset, convert_wiki_dataset, convert_cnn_dataset
 import argparse
 from GreedySTree import GreedySTree
 from Llama import LlamaForCausalLM_Attn
@@ -226,6 +226,10 @@ tokenizer.pad_token = tokenizer.eos_token
 #tokenizer.add_special_tokens({'pad_token': '[PAD]'})
 if args.dataset == 'openwebtext':
     tokenized_dataset_eval = load_from_disk("dataset/openwebtext_eval").select(list(range(args.start, args.end)))
+elif args.dataset == 'wiki':
+    tokenized_dataset_eval = convert_wiki_dataset(tokenizer=tokenizer).select(list(range(args.start, args.end)))
+elif args.dataset == 'cnn':
+    tokenized_dataset_eval = convert_cnn_dataset(tokenizer=tokenizer).select(list(range(args.start, args.end)))
 else:
     tokenized_dataset_eval = convert_dataset(tokenizer=tokenizer,file_path=args.dataset).select(list(range(args.start, args.end)))
 

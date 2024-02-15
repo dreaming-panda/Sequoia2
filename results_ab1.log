@@ -1,0 +1,24 @@
+[2024-02-12 07:04:03,454] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuoming/Sequoia2/68m_13b/growmaps/A100-CNN-68m-13b-stochastic-S4.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :382.68555s, latency :0.01527s, decoding step: 25067, large model step: 12503
+[2024-02-12 07:10:58,075] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuoming/Sequoia2/68m_13b/growmaps/A100-CNN-68m-13b-stochastic-S8.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :340.12017s, latency :0.01354s, decoding step: 25117, large model step: 10878
+[2024-02-12 07:17:12,130] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuoming/Sequoia2/68m_13b/growmaps/A100-CNN-68m-13b-stochastic-S16.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :320.56239s, latency :0.01270s, decoding step: 25250, large model step: 9610
+[2024-02-12 07:23:06,989] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuoming/Sequoia2/68m_13b/growmaps/A100-CNN-68m-13b-stochastic-S32.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :293.87982s, latency :0.01150s, decoding step: 25555, large model step: 8664
+[2024-02-12 07:28:36,333] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuoming/Sequoia2/68m_13b/growmaps/A100-CNN-68m-13b-stochastic-S64.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :290.01089s, latency :0.01152s, decoding step: 25182, large model step: 7830
+[2024-02-12 07:34:06,054] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuoming/Sequoia2/68m_13b/growmaps/A100-CNN-68m-13b-stochastic-S128.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :321.94891s, latency :0.01296s, decoding step: 24834, large model step: 7117
+[2024-02-12 07:40:14,162] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuoming/Sequoia2/68m_13b/growmaps/A100-CNN-68m-13b-stochastic-S256.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :419.08479s, latency :0.01649s, decoding step: 25422, large model step: 6670
+[2024-02-12 07:48:18,048] [INFO] [real_accelerator.py:191:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuoming/Sequoia2/68m_13b/growmaps/A100-CNN-68m-13b-stochastic-S512.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :749.54203s, latency :0.03056s, decoding step: 24525, large model step: 6179
