@@ -1,43 +1,32 @@
-from transformers import LlamaForCausalLM, LlamaTokenizer, DataCollatorForLanguageModeling, OPTForCausalLM, AutoTokenizer
+from transformers import DataCollatorForLanguageModeling, AutoTokenizer
 import torch
 import numpy as np 
-from datasets import load_from_disk, Dataset
+from datasets import load_from_disk
 from torch.utils.data.dataloader import DataLoader
 from tqdm import tqdm
 from torch.nn.functional import softmax
-import accelerate
 from accelerate import Accelerator
 import argparse
-from data_converter import convert_dataset, convert_wiki_dataset, convert_cnn_dataset, convert_c4_dataset_eval
+from data_converter import convert_wiki_dataset, convert_cnn_dataset, convert_c4_dataset_eval
 import argparse
-from SpecTree import SpecTree
-from Llama import LlamaForCausalLM_Attn
+from Tree.SpecTree import SpecTree
 import time
-from time import sleep
-from utils import get_sampling_logits, _make_causal_mask, get_residual, cuda_graph_for_residual, cuda_graph_for_sampling_without_replacement
-import json
-from Engine import GraphInferenceEngine, GraphInferenceEngineTG
-from offload_engine import OffloadEngine
+from utils import get_sampling_logits, _make_causal_mask, cuda_graph_for_residual, cuda_graph_for_sampling_without_replacement
+from Engine.Engine import GraphInferenceEngine, GraphInferenceEngineTG
+from Engine.offload_engine import OffloadEngine
 import random
 parser = argparse.ArgumentParser()
 parser.add_argument('--model', type=str, help='model')
 parser.add_argument('--target', type=str, help='target model')
 parser.add_argument('--dataset', type=str, default="dataset/c4_small.json", help='dataset path')
-parser.add_argument('--growmap', type=str, default="growmaps/68m_7b-64.pt", help='dataset path')
+parser.add_argument('--growmap', type=str, default="growmaps/68m_7b-64.pt", help='growmap path')
 parser.add_argument('--start', type=int, default=0, help='start')
 parser.add_argument('--end', type=int, default=200, help='end')
 parser.add_argument('--T', type=float, default=0.6, help='temperature')
 parser.add_argument('--P', type=float, default=0.9, help='top_p')
-parser.add_argument('--DP', type=float, default=1.1, help='draft_top_p')
-parser.add_argument('--D', type=int, default=1, help='depth')
-parser.add_argument('--B', type=int, default=16, help='budget')
-parser.add_argument('--W', type=int, default=16, help='max width')
 parser.add_argument('--M', type=int, default=256, help='max length')
 parser.add_argument('--seed', type=int, default=17, help='random seed')
 parser.add_argument('--Mode', type=str, default="greedy", help='tree mode')
-parser.add_argument('--decay', type=float, default=0.85, help='decay')
-parser.add_argument('--negative', action='store_true')
-parser.add_argument('--static', action='store_true')
 parser.add_argument('--offloading', action='store_true')
 args = parser.parse_args()
 print(args)
@@ -51,8 +40,7 @@ setup_seed(args.seed)
 
 
 
-def simulation_greedy_with_tree_fast(target_model : GraphInferenceEngineTG, draft_model: GraphInferenceEngine, dataloader: DataLoader, T=0.6, top_p=0.9, 
-            draft_top_p=1.1, budget=32, w=4, decay=0.85, negative=False, static=False, 
+def simulation_fast(target_model : GraphInferenceEngineTG, draft_model: GraphInferenceEngine, dataloader: DataLoader, T=0.6, top_p=0.9,
             max_length=512, residual_graph=None, grow_map=None, sampling_callables = None,
             sample_gather_indices = None):
     num_eval_steps = len(dataloader)
@@ -71,10 +59,6 @@ def simulation_greedy_with_tree_fast(target_model : GraphInferenceEngineTG, draf
             input_ids = batch['input_ids'][..., :128]
             labels = batch['labels'][..., :128]
             terminate = False
-            # print(input_ids)
-            # print(tokenizer.decode(input_ids[0]))
-
-            
             if labels[0][-1] == -100: terminate = True
             draft_kv_len = 0
             target_kv_len = 0
@@ -99,10 +83,6 @@ def simulation_greedy_with_tree_fast(target_model : GraphInferenceEngineTG, draf
                 num_large_model_steps += 1
                 input_ids = valid_tokens.unsqueeze(0)
                 if (input_ids[0][-1] == 2) or (input_ids[0][-1] == 0): terminate = True
-
-                # if input_ids.shape[1] >= 256 or terminate == True:
-                #     print(input_ids)
-                #     print(tokenizer.decode(input_ids[0]))
             
             torch.cuda.synchronize()
             t2 = time.time()
@@ -159,8 +139,7 @@ def simulation_baseline(target_model : GraphInferenceEngineTG, dataloader: DataL
             
     print("total time :{:.5f}s, latency :{:.5f}s, decoding step: {}".format(total_time, total_time / num_decoding_steps, num_decoding_steps))
     return num_decoding_steps
-def simulation_greedy_with_tree_fast_benchmark(target_model : GraphInferenceEngineTG, draft_model: GraphInferenceEngine, dataloader: DataLoader, T=0.6, top_p=0.9, 
-                draft_top_p=1.1, budget=32, w=4, decay=0.85, negative=False, static=False, 
+def simulation_benchmark(target_model : GraphInferenceEngineTG, draft_model: GraphInferenceEngine, dataloader: DataLoader, T=0.6, top_p=0.9, 
                 max_length=512, residual_graph=None, grow_map=None, sampling_callables = None,
                 sample_gather_indices = None):
     num_eval_steps = len(dataloader)
@@ -245,7 +224,6 @@ eval_list = list(range(200, 2000))
 import random
 random.shuffle(eval_list)
 
-#tokenizer.add_special_tokens({'pad_token': '[PAD]'})
 if args.dataset == 'openwebtext':
     tokenized_dataset_eval = load_from_disk("dataset/openwebtext_eval").select(eval_list[args.start :args.end])
 elif args.dataset == 'wiki':
@@ -301,23 +279,14 @@ else:
         sample_gather_indices[i] = ith_gather_list
     
 
-    
-
-
-
-
-
-
 accelerator = Accelerator()
 dataloader = accelerator.prepare(dataloader)
 
-#warm up functions:
-
 if args.Mode == 'benchmark':
-    simulation_greedy_with_tree_fast_benchmark(target_model=target_model, draft_model=draft_model, dataloader=dataloader, T=args.T, top_p=args.P, budget=args.B, draft_top_p=args.DP, w=args.W, negative=args.negative, decay=args.decay, static=args.static, 
+    simulation_benchmark(target_model=target_model, draft_model=draft_model, dataloader=dataloader, T=args.T, top_p=args.P, 
                                                max_length=args.M, residual_graph = residual_graph, grow_map = grow_map, sampling_callables=sampling_callables, sample_gather_indices = sample_gather_indices)
 elif args.Mode == 'baseline':
     simulation_baseline(target_model=target_model, dataloader=dataloader, T=args.T, top_p=args.P, max_length=args.M)
 elif args.Mode == 'greedy':
-    simulation_greedy_with_tree_fast(target_model=target_model, draft_model=draft_model, dataloader=dataloader, T=args.T, top_p=args.P, budget=args.B, draft_top_p=args.DP, w=args.W, negative=args.negative, decay=args.decay, static=args.static, 
+    simulation_fast(target_model=target_model, draft_model=draft_model, dataloader=dataloader, T=args.T, top_p=args.P,
                                      max_length=args.M, residual_graph = residual_graph, grow_map = grow_map, sampling_callables=sampling_callables, sample_gather_indices = sample_gather_indices)

@@ -1,8 +1,6 @@
 import torch
 import dataclasses
-import math
-from copy import deepcopy
-from torch.nn.functional import relu, normalize, softmax
+from torch.nn.functional import softmax
 
 def get_residual(p: torch.Tensor, q:torch.Tensor):
     residual = (p - q).relu_()
@@ -33,13 +31,6 @@ def sampling_argmax(
         num_samples: int):
         return sampling_logits.topk(k=num_samples).indices.flatten()
 
-def parallel_copy(
-          dst_buffer: torch.LongTensor,
-          source : torch.LongTensor,
-          offset : torch.LongTensor,
-          length : torch.LongTensor
-    ):
-     pass
 def expand_kv(kv_cache, k):
     kv_shape = kv_cache[0][0].shape
     new_kv_cache = ()
@@ -106,6 +97,7 @@ def _make_causal_mask(
 ):
     """
     Make causal mask used for bi-directional self-attention.
+    Copied from Huggingface
     """
     bsz, tgt_len = input_ids_shape
     mask = torch.full((tgt_len, tgt_len), torch.tensor(torch.finfo(dtype).min, device=device), device=device)
