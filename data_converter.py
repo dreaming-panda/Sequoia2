@@ -1,13 +1,7 @@
 import torch
-from transformers.models.opt.modeling_opt import OPTAttention, OPTDecoderLayer, OPTForCausalLM
-from transformers import GPT2Tokenizer, LlamaForCausalLM, LlamaModel, LlamaTokenizer
 import torch
-from accelerate import Accelerator
 from accelerate.logging import get_logger
-import pandas as pd
-
-from datasets import load_dataset, concatenate_datasets
-
+from datasets import load_dataset
 from transformers.utils import check_min_version
 from transformers.utils.versions import require_version
 check_min_version("4.28.0.dev0")
@@ -17,7 +11,7 @@ require_version("datasets>=1.8.0", "To fix: pip install -r examples/pytorch/tran
 
 
 def convert_wiki_dataset(tokenizer, seq_len = 256):
-    dataset = load_dataset("wikimedia/wikipedia", "20231101.en", split="train[0:2000]", cache_dir="/scratch/dataset")
+    dataset = load_dataset("wikimedia/wikipedia", "20231101.en", split="train[0:2000]")
     def tokenize_function(examples):
             return tokenizer(examples["text"], return_tensors='pt',max_length=seq_len,padding=True,truncation=True)
     dataset = dataset.map(tokenize_function, batched=True, remove_columns=['text'])
@@ -26,7 +20,7 @@ def convert_wiki_dataset(tokenizer, seq_len = 256):
     return dataset
 
 def convert_cnn_dataset(tokenizer, seq_len = 256):
-    dataset = load_dataset("cnn_dailymail", "1.0.0", split="test[0:2000]", cache_dir="/scratch/dataset")
+    dataset = load_dataset("cnn_dailymail", "1.0.0", split="test[0:2000]")
     def tokenize_function(examples):
             return tokenizer(examples["article"], return_tensors='pt',max_length=seq_len,padding=True,truncation=True)
     dataset = dataset.map(tokenize_function, batched=True, remove_columns=['article'])
