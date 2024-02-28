@@ -1,0 +1,21 @@
+[2024-02-23 08:03:17,571] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-CNN-7b-70b-stochastic.pt', start=0, end=50, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+total time :1371.54774s, latency :0.75567s, decoding step: 1815, large model step: 201, 9.029850746268657
+[2024-02-23 08:42:56,116] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-CNN-7b-70b-stochastic.pt', start=0, end=50, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='baseline', decay=0.85, negative=False, static=False, offloading=True)
+[2024-02-23 09:48:17,257] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-CNN-7b-70b-stochastic.pt', start=0, end=5, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='benchamark', decay=0.85, negative=False, static=False, offloading=True)
+[2024-02-23 09:48:49,020] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-CNN-7b-70b-stochastic.pt', start=0, end=5, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='benchmark', decay=0.85, negative=False, static=False, offloading=True)
+8.642857142857142
+8.266666666666667
+9.125
+8.981481481481481
+8.797101449275363
+total decoding steps: 607 large model steps: 69 avg decoding step: 8.797101449275363
+initialization time:1.2957531472911006e-05 speculate time: 0.4928100661955018 verify time: 6.2817638680554815
+large model run: 6.253371473671733 accept loop: 0.0033947281215501867 kv select: 0.0022326206815415535
+small model run: 0.4887758199719415 sample time: 0.0031802688819774685
+[2024-02-23 11:17:32,144] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-CNN-7b-70b-stochastic.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+total time :5695.64462s, latency :0.77344s, decoding step: 7364, large model step: 835, 8.819161676646706

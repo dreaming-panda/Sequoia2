@@ -15,3 +15,13 @@ Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', datase
 total time :564.46590s, latency :0.02240s, decoding step: 25197, large model step: 9871
 [2024-02-10 18:15:55,199] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
 Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='openwebtext', growmap='/home/zhuominc/workspace/Sequoia/growmaps/8x8-tree.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=384, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :573.58183s, latency :0.02281s, decoding step: 25150, large model step: 10018
+[2024-02-10 18:26:02,269] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-160m', target='meta-llama/Llama-2-13b-hf', dataset='dataset/c4_small.json', growmap='/home/zhuominc/workspace/Sequoia/growmaps/8x8-tree.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=384, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :391.12045s, latency :0.01954s, decoding step: 20015, large model step: 5668
+[2024-02-10 18:33:13,220] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-160m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/growmaps/8x8-tree.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=384, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :561.21865s, latency :0.02186s, decoding step: 25669, large model step: 8172
+[2024-02-10 18:43:15,349] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-160m', target='meta-llama/Llama-2-13b-hf', dataset='openwebtext', growmap='/home/zhuominc/workspace/Sequoia/growmaps/8x8-tree.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=384, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :588.79755s, latency :0.02311s, decoding step: 25475, large model step: 8561

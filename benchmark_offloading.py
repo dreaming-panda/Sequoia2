@@ -16,10 +16,10 @@ print(args)
 
 #target_model = LlamaForCausalLM_Attn.from_pretrained(args.target, torch_dtype=torch.float16, device_map="auto")
 draft_model = LlamaForCausalLM.from_pretrained(args.model, torch_dtype=torch.float16)
-draft_model = accelerate.cpu_offload(draft_model, execution_device="cuda:0")
-# device_map = infer_auto_device_map(draft_model, max_memory={0: 35 * (1 << 30), "cpu": 120 * (1 << 30)}, dtype=torch.float16)
+#draft_model = accelerate.cpu_offload(draft_model, execution_device="cuda:0")
+device_map = infer_auto_device_map(draft_model, max_memory={0: "20GIB", "cpu": "130GIB"}, dtype=torch.float16, no_split_module_classes=["LlamaDecoderLayer"])
 
-# draft_model = accelerate.dispatch_model(draft_model, main_device="cuda:0", device_map=device_map)
+draft_model = accelerate.dispatch_model(draft_model, main_device="cuda:0", device_map=device_map)
 # draft_model = deepspeed.init_inference(draft_model,  
 #                 dtype=torch.float16, enable_cuda_graph=True)
 with torch.no_grad():

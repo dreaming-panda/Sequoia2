@@ -142,7 +142,7 @@ def convert_gptprompt_dataset(tokenizer, seq_len = 256):
     return dataset
 
 def convert_c4_dataset_eval(tokenizer, seq_len = 256):
-    dataset = load_dataset("c4", "realnewslike", split="validation[0:100]")
+    dataset = load_dataset("c4", "en", split="validation[0:2000]")
     def tokenize_function(examples):
             return tokenizer(examples["text"], return_tensors='pt',max_length=seq_len,padding=True,truncation=True)
     dataset = dataset.map(tokenize_function, batched=True, remove_columns=['text', 'timestamp', 'url'])

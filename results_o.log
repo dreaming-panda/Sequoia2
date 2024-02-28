@@ -1,0 +1,30 @@
+[2024-02-24 10:20:37,108] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-CNN-7b-70b-stochastic.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+total time :5864.52893s, latency :0.79444s, decoding step: 7382, large model step: 857, 8.613768961493582
+[2024-02-24 12:02:19,714] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='dataset/c4_small.json', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-C4-7b-70b-stochastic.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+[2024-02-24 12:32:35,309] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-CNN-7b-70b-stochastic.pt', start=0, end=50, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+total time :1356.43660s, latency :0.76505s, decoding step: 1773, large model step: 197, 9.0
+[2024-02-24 12:57:45,880] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='dataset/c4_small.json', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-C4-7b-70b-stochastic.pt', start=0, end=50, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+total time :917.40503s, latency :0.64834s, decoding step: 1415, large model step: 131, 10.801526717557252
+[2024-02-24 13:15:37,065] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='openwebtext', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-OpenWebText-7b-70b-stochastic.pt', start=0, end=50, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+total time :2052.10324s, latency :0.76457s, decoding step: 2684, large model step: 300, 8.946666666666667
+[2024-02-24 13:52:19,861] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-CNN-7b-70b-greedy.pt', start=0, end=50, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+total time :1448.30166s, latency :0.76711s, decoding step: 1888, large model step: 212, 8.90566037735849
+[2024-02-24 14:18:35,078] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='dataset/c4_small.json', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-C4-7b-70b-greedy.pt', start=0, end=50, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+total time :916.09129s, latency :0.65295s, decoding step: 1403, large model step: 132, 10.628787878787879
+[2024-02-24 14:35:55,102] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='openwebtext', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-OpenWebText-7b-70b-greedy.pt', start=0, end=50, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+total time :2094.11006s, latency :0.78226s, decoding step: 2677, large model step: 304, 8.805921052631579

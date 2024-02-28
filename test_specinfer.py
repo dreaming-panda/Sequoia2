@@ -224,12 +224,17 @@ def simulation_greedy_with_tree_fast_benchmark(target_model : GraphInferenceEngi
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf", use_fast=False)
 tokenizer.pad_token = tokenizer.eos_token
 #tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+eval_list = list(range(2000))
+import random
+random.shuffle(eval_list)
+
+#tokenizer.add_special_tokens({'pad_token': '[PAD]'})
 if args.dataset == 'openwebtext':
-    tokenized_dataset_eval = load_from_disk("dataset/openwebtext_eval").select(list(range(args.start, args.end)))
+    tokenized_dataset_eval = load_from_disk("dataset/openwebtext_eval").select(eval_list[args.start :args.end])
 elif args.dataset == 'wiki':
-    tokenized_dataset_eval = convert_wiki_dataset(tokenizer=tokenizer).select(list(range(args.start, args.end)))
+    tokenized_dataset_eval = convert_wiki_dataset(tokenizer=tokenizer).select(eval_list[args.start :args.end])
 elif args.dataset == 'cnn':
-    tokenized_dataset_eval = convert_cnn_dataset(tokenizer=tokenizer).select(list(range(args.start, args.end)))
+    tokenized_dataset_eval = convert_cnn_dataset(tokenizer=tokenizer).select(eval_list[args.start :args.end])
 else:
     tokenized_dataset_eval = convert_dataset(tokenizer=tokenizer,file_path=args.dataset).select(list(range(args.start, args.end)))
 

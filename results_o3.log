@@ -1,0 +1,1660 @@
+[2024-02-26 09:22:24,776] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-CNN-7b-70b-stochastic-2.pt', start=0, end=5, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, seed=17, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+tensor([[    1,   313, 29907, 10262, 29897,  1349,   968,   526,  8866,  1319,
+          3064,   373,   278,  9939, 14378,   297,   278,  3186, 29889,   450,
+          2906,   579,  1218,  8437,   339,  1296,   393,  7124, 22806,   284,
+           373, 24211,   731,  1283,   263,   791,   273,  6609,   393,  2175,
+          2919,  3694,   310, 10784,  2596,  7123, 29892,  4567, 29892, 28606,
+           470,  1020,  2986,   373,  8040, 18274,   342, 29889,  1126,  1156,
+           845,  1698, 29879, 29892,  3704,   263,  4549,   697, 16340, 29892,
+           526,  3133,   292,   304,  3638, 15007,   322, 23150,   266,   870,
+          3241,  1623,   278, 19223,   680, 29892,   752,   506,  1218, 26429,
+         14231, 29889,   376,  4806,   892, 16246,  1244,   297,  2967,  4242,
+         29892, 11223,   278,  6434,   471,  2805,  2253,  1699,  1497, 10784,
+           495,  1704,  3510,  9293,  1330, 29889,   376,  2855,   769, 11584,
+         29892,   591,  7091,   278,  1156,   845,  1698,  1699]],
+       device='cuda:0')
+<s> (CNN)These are fearful times on the highest mountain in the world. The devastating earthquake that hit Nepal on Saturday set off avalanches that left large numbers of climbers dead, missing, injured or trapped on Mount Everest. And aftershocks, including a strong one Sunday, are continuing to send snow and rocks thundering down the mountainside, complicating rescue efforts. "We were sitting here in base camp, feeling the situation was getting better," said climber Carsten Pederson. "And then suddenly, we felt the aftershock,"
+tensor([[    1,   313, 29907, 10262, 29897,  1349,   968,   526,  8866,  1319,
+          3064,   373,   278,  9939, 14378,   297,   278,  3186, 29889,   450,
+          2906,   579,  1218,  8437,   339,  1296,   393,  7124, 22806,   284,
+           373, 24211,   731,  1283,   263,   791,   273,  6609,   393,  2175,
+          2919,  3694,   310, 10784,  2596,  7123, 29892,  4567, 29892, 28606,
+           470,  1020,  2986,   373,  8040, 18274,   342, 29889,  1126,  1156,
+           845,  1698, 29879, 29892,  3704,   263,  4549,   697, 16340, 29892,
+           526,  3133,   292,   304,  3638, 15007,   322, 23150,   266,   870,
+          3241,  1623,   278, 19223,   680, 29892,   752,   506,  1218, 26429,
+         14231, 29889,   376,  4806,   892, 16246,  1244,   297,  2967,  4242,
+         29892, 11223,   278,  6434,   471,  2805,  2253,  1699,  1497, 10784,
+           495,  1704,  3510,  9293,  1330, 29889,   376,  2855,   769, 11584,
+         29892,   591,  7091,   278,  1156,   845,  1698,  1699,   540,  1497,
+         29889,   376,  2855,   769,   591,  4446,   263,  4802,  9570,   310,
+         15007,  6421,  7113,   502,  1213,   450,   263,   791, 20372, 29892,
+           540,  1497, 29892,   471,  3109,  1135,   263, 17967,  3448, 29892,
+           373,   278,   916,  2625,   310,   278, 12217,   398,  2423, 26998,
+         11950, 29889,   376,  4806, 29915,   276, 16246,  1244,   297,  2967,
+          4242,   322,   591, 29915,   276,  9109,  1699,   540,  1497, 29889,
+           376,  6246,   591, 29915,   276, 16246, 16246,  1244,   297,  8866,
+          1213,    13,  1124,   597,   287,   654, 29889, 29883, 15755, 29889,
+           510, 29914, 29906, 29900, 29896, 29945, 29914, 29900, 29946, 29914,
+         29906, 29953, 29914, 11526, 29914,   484,  7830, 29899,   799,   386,
+           339,  1296, 29899,  1310,   342, 29914,  2248, 29889,  1420,    13,
+         29923,   369,   342,   319,   791, 20372, 29901, 16886,  3274, 16886,
+          3362,  1983,  2233,   326,  2596,  2610]], device='cuda:0')
+<s> (CNN)These are fearful times on the highest mountain in the world. The devastating earthquake that hit Nepal on Saturday set off avalanches that left large numbers of climbers dead, missing, injured or trapped on Mount Everest. And aftershocks, including a strong one Sunday, are continuing to send snow and rocks thundering down the mountainside, complicating rescue efforts. "We were sitting here in base camp, feeling the situation was getting better," said climber Carsten Pederson. "And then suddenly, we felt the aftershock," he said. "And then we saw a big cloud of snow coming towards us." The avalanche, he said, was less than a mile away, on the other side of the Khumbu Icefall. "We're sitting here in base camp and we're safe," he said. "But we're sitting sitting here in fear."
+http://edition.cnn.com/2015/04/26/world/nepal-earthquake-everest/index.html
+Everest Avalanche: Guidepa Guide Warns Climbers May
+tensor([[    1,  7660,   313, 29907, 10262, 29897,  2744,  1283, 29899, 29881,
+           329, 29891,  4509,   310,   278,   853,  5560,   287,  7946,   310,
+         10213,  6692,   471, 24383, 28728,   297,  7660,   322, 20139,   411,
+           937, 29899, 12163,   929, 16388, 26072, 29880,   653, 29892,   263,
+          7995,  2592, 29892,   322,   697,  3984,   311, 12676,   272,  2302,
+           363, 22104,   310,  2875, 29892,   278,   360, 29889, 29907, 29889,
+         28788, 18923, 10317,  8967, 29889, 11498, 23874,  5080, 29892, 29871,
+         29906, 29929, 29892,   471, 24383,   472,   263,  6114, 29915, 29879,
+         25488,   297,   317,   449, 15879,  7660, 29892,  5034,   304, 10701,
+          4944,   491,   278, 10974, 14311, 29889,   940,   756,  1063,  7180,
+           373, 19185,  5967,   322,   670,  6993,  2821,   749,   756,  1063,
+          8872,  2760, 29892,   278, 10213,  6692,  1497, 29889, 23874,  5080,
+           338,  9859,   304,   278, 19358,  4750,  1080, 25889]],
+       device='cuda:0')
+<s> Washington (CNN)An off-duty member of the Uniformed Division of Secret Service was arrested Friday in Washington and charged with first-degree attempted burglary, a felony, and one misdemeanor count for destruction of property, the D.C. Metropolitan Police Department reported. Arthur Baldwin, 29, was arrested at a woman's residence in Southeast Washington, according to documents provided by the police department. He has been placed on administrative leave and his security clearance has been suspended, the Secret Service said. Baldwin is assigned to the Foreign Missions Branch
+tensor([[    1,  7660,   313, 29907, 10262, 29897,  2744,  1283, 29899, 29881,
+           329, 29891,  4509,   310,   278,   853,  5560,   287,  7946,   310,
+         10213,  6692,   471, 24383, 28728,   297,  7660,   322, 20139,   411,
+           937, 29899, 12163,   929, 16388, 26072, 29880,   653, 29892,   263,
+          7995,  2592, 29892,   322,   697,  3984,   311, 12676,   272,  2302,
+           363, 22104,   310,  2875, 29892,   278,   360, 29889, 29907, 29889,
+         28788, 18923, 10317,  8967, 29889, 11498, 23874,  5080, 29892, 29871,
+         29906, 29929, 29892,   471, 24383,   472,   263,  6114, 29915, 29879,
+         25488,   297,   317,   449, 15879,  7660, 29892,  5034,   304, 10701,
+          4944,   491,   278, 10974, 14311, 29889,   940,   756,  1063,  7180,
+           373, 19185,  5967,   322,   670,  6993,  2821,   749,   756,  1063,
+          8872,  2760, 29892,   278, 10213,  6692,  1497, 29889, 23874,  5080,
+           338,  9859,   304,   278, 19358,  4750,  1080, 25889, 29892,   278,
+         10213,  6692,  1497, 29889,   450,  6114, 29892,  1058,   471,   451,
+         15659,   491, 10974, 29892,  5429, 13049,   393,  1183,   750,  4133,
+           304,   902,  3271,   304,  1284, 23874,  5080,   727, 29892, 10974,
+          1497, 29889,  2296,  5429, 10974,   393,  1183,  3282, 29915, 29873,
+          1073, 23874,  5080,   322,   750,  2360,  2183,  1075, 10751,   304,
+          3896,   902, 25488, 29889,  2296,  1497,   393,  1183,   750,  2000,
+           278, 10974,  1363,  1183,  7091, 29513, 29889,    13, 29933,  2741,
+          5080,  5429, 13049,   393,   540,   750,  7802,   278,  3271,  1363,
+           310,   263, 28447,   411,   670,  7826, 18326, 29892,  1058,   471,
+           278,  6114, 29915, 29879,   696,  3011,   403, 29892,  5034,   304,
+           278, 10974,  3461, 29889, 23874,  5080,  5429, 13049,   540,   750,
+          7802,   278,  3271,  1549,   263,   937, 29899, 14939,  3474, 29892,
+           607,   750,  1063,  9391, 29889, 23874,  5080,   471,  8608,   287,
+           304,   278,  3824]], device='cuda:0')
+<s> Washington (CNN)An off-duty member of the Uniformed Division of Secret Service was arrested Friday in Washington and charged with first-degree attempted burglary, a felony, and one misdemeanor count for destruction of property, the D.C. Metropolitan Police Department reported. Arthur Baldwin, 29, was arrested at a woman's residence in Southeast Washington, according to documents provided by the police department. He has been placed on administrative leave and his security clearance has been suspended, the Secret Service said. Baldwin is assigned to the Foreign Missions Branch, the Secret Service said. The woman, who was not identified by police, told officers that she had returned to her home to find Baldwin there, police said. She told police that she didn't know Baldwin and had never given him permission to enter her residence. She said that she had called the police because she felt threatened.
+Baldwin told officers that he had entered the home because of a dispute with his girlfriend, who was the woman's roommate, according to the police report. Baldwin told officers he had entered the home through a first-floor window, which had been broken. Baldwin was transported to the First
+tensor([[    1,   313, 29907, 10262, 29897,  7083,  1111, 14985,   601,   338,
+           599,   297, 29889, 29871,   450, 21178,  6940,  1061,   515, 13813,
+           756,  9326,   393,   540,   338, 25738,   278, 21178,  6673,   616,
+          2245,  3381, 29892,  2734,   373,   385,  5994,  4695,  2643,   393,
+           540,  7232,   397,   583,   278, 11640,   310,   278,  3082, 16814,
+         29889,  2973,   670, 12397,  1319,  5864,   322,  3600,  8357,   293,
+         16778, 29892,   372, 29915, 29879, 25782,   292,   304,  1074, 14985,
+           601,   408,   278,   716, 10416,   393,   278,   402,  4590,  4225,
+           297,  1797,   304,   752,  2650,  2750,  9143,   653,  2233, 16929,
+           297, 29871, 29906, 29900, 29896, 29953, 29889, 29871, 15175, 14985,
+           601,   756,  1063,   670,  1914, 17322, 11103,   373,   825,  1033,
+           505,  1063,   670,  1023, 12608,  5626, 29901,  5198, 16783, 11736,
+           322, 23653,  5302, 29889, 29871,   940,  8640,  2217]],
+       device='cuda:0')
+<s> (CNN)Marco Rubio is all in.  The Republican senator from Florida has announced that he is seeking the Republican presidential nomination, running on an optimistic message that he embodies the promise of the American Dream. With his youthful energy and Hispanic roots, it's tempting to see Rubio as the new blood that the GOP needs in order to compete against Hillary Clinton in 2016.  Yet Rubio has been his own worst enemy on what could have been his two signature issues: immigration reform and Cuba relations.  He holds little
+tensor([[    1,   313, 29907, 10262, 29897,  7083,  1111, 14985,   601,   338,
+           599,   297, 29889, 29871,   450, 21178,  6940,  1061,   515, 13813,
+           756,  9326,   393,   540,   338, 25738,   278, 21178,  6673,   616,
+          2245,  3381, 29892,  2734,   373,   385,  5994,  4695,  2643,   393,
+           540,  7232,   397,   583,   278, 11640,   310,   278,  3082, 16814,
+         29889,  2973,   670, 12397,  1319,  5864,   322,  3600,  8357,   293,
+         16778, 29892,   372, 29915, 29879, 25782,   292,   304,  1074, 14985,
+           601,   408,   278,   716, 10416,   393,   278,   402,  4590,  4225,
+           297,  1797,   304,   752,  2650,  2750,  9143,   653,  2233, 16929,
+           297, 29871, 29906, 29900, 29896, 29953, 29889, 29871, 15175, 14985,
+           601,   756,  1063,   670,  1914, 17322, 11103,   373,   825,  1033,
+           505,  1063,   670,  1023, 12608,  5626, 29901,  5198, 16783, 11736,
+           322, 23653,  5302, 29889, 29871,   940,  8640,  2217,  2845,   975,
+          2845,  2228,   322,   756,   394,   819,   630,  3654,   515,  1820,
+          5144,   310,   670,  1914,  6263,   373,  1716, 29889,    13, 29950,
+           275, 23553,   373,  1438,  1023,  5626, 23400,  3221,   263, 25871,
+          1108,   363, 14985,   601, 29901,   670, 10225,   310,  7271, 29889,
+           940,   756,  6766,   408,   263,  6940,  1061,   363,  3109,  1135,
+          5320,  2440,   322,   471,   263,  2106,  9475,   363,  9475,  2440,
+          1434,   393, 29889,   940,   756,  3447,   304,  3275,   373,   738,
+          7282, 13332,   362, 29889,   739,   338,   697,  2655,   304,   367,
+           263, 10849,  3700,   322,   278,   716, 10416,   310,   278, 21178,
+          9173, 29889,   739,   338,  1790,   304,   367,   443,  1688,   287,
+           322,   297,   735,   546,   819,  1133, 29889,    13, 29934,   431,
+           601,   338,  1900,  2998,   363,   670,   664,   373,  5198, 16783,
+         11736, 29889,   940,   471,   263,  4509]], device='cuda:0')
+<s> (CNN)Marco Rubio is all in.  The Republican senator from Florida has announced that he is seeking the Republican presidential nomination, running on an optimistic message that he embodies the promise of the American Dream. With his youthful energy and Hispanic roots, it's tempting to see Rubio as the new blood that the GOP needs in order to compete against Hillary Clinton in 2016.  Yet Rubio has been his own worst enemy on what could have been his two signature issues: immigration reform and Cuba relations.  He holds little either over either issue and has alienated himself from key members of his own party on both.
+His difficulties on these two issues underscore a deeper problem for Rubio: his lack of experience. He has served as a senator for less than five years and was a state eight for eight years before that. He has yet to lead on any significant legislation. It is one thing to be a fresh face and the new blood of the Republican Party. It is another to be untested and inexperienced.
+Rubio is best known for his work on immigration reform. He was a member
+tensor([[    1,   313, 29907, 10262, 29897, 23002,   713,  7178, 27880, 12065,
+           262,   528,   582,  1505,   287,  1283, 10324,  5155,  1048,   278,
+         10879,   310, 10504,  9753,  1953,   373,   670,  5233,  2645,   263,
+          5233,   635, 12672, 17568,   660, 29987, 29909,  4867, 29889,   376,
+         22509,  1953,   526,  9753,  1953,  1699,   540,  1497, 29889,   376,
+          2887,  2215,   408,  9753,  1953,   526, 15041, 13035,   313, 19562,
+         29915,   276, 29897,  1048,   278,   817,   304,  1040,  6038,  1749,
+          5849,  1699,   451,   925,  1048, 23961,   322, 29682, 29874, 29889,
+         10504,  9753,  1953,   892,  8762,  1156, 25820,   385, 13996,   287,
+         29682, 29874,   322,   410, 29899, 23002,   713,  2903,   271,  2879,
+          8957,   839, 29417,   713,  5874,  8249,   297,   278,  5233, 29915,
+         29879,  9755, 29889, 12065,   262, 25383,   278,  9753,  1953,   723,
+           451,  1095,  4720, 29889,  1551,   278, 14253,  6932]],
+       device='cuda:0')
+<s> (CNN)Russian President Vladimir Putin shrugged off repeated questions about the impact of Western sanctions on his nation during a nationally broadcast annual Q&A session. "Sanctions are sanctions," he said. "As far as sanctions are concerned .... (they're) about the need to constrain our development," not just about Ukraine and Crimea. Western sanctions were implemented after Moscow annexed Crimea and pro-Russian separatists battled Ukrainian government forces in the nation's east. Putin predicted the sanctions would not end soon. On the Middle East
+tensor([[    1,   313, 29907, 10262, 29897, 23002,   713,  7178, 27880, 12065,
+           262,   528,   582,  1505,   287,  1283, 10324,  5155,  1048,   278,
+         10879,   310, 10504,  9753,  1953,   373,   670,  5233,  2645,   263,
+          5233,   635, 12672, 17568,   660, 29987, 29909,  4867, 29889,   376,
+         22509,  1953,   526,  9753,  1953,  1699,   540,  1497, 29889,   376,
+          2887,  2215,   408,  9753,  1953,   526, 15041, 13035,   313, 19562,
+         29915,   276, 29897,  1048,   278,   817,   304,  1040,  6038,  1749,
+          5849,  1699,   451,   925,  1048, 23961,   322, 29682, 29874, 29889,
+         10504,  9753,  1953,   892,  8762,  1156, 25820,   385, 13996,   287,
+         29682, 29874,   322,   410, 29899, 23002,   713,  2903,   271,  2879,
+          8957,   839, 29417,   713,  5874,  8249,   297,   278,  5233, 29915,
+         29879,  9755, 29889, 12065,   262, 25383,   278,  9753,  1953,   723,
+           451,  1095,  4720, 29889,  1551,   278, 14253,  6932, 29892, 12065,
+           262,  1497,   540,   471,   376,   535,  3845,  1133, 29908,   393,
+           278, 10637,  9121,   723,  9269,   297, 19912,  8713,  6392,  5874,
+          8249,  8589, 16427,   293,  9413,  2879,   322, 15115,  2879, 29889,
+           940,   884,  1497,   393,   278,  3303,  3900,   322,   916, 10504,
+         19079,   817,   304,  5988, 12710,   322, 14883,   297,  2304,   310,
+           278,  8713,  6392,  5874, 29889,   376,  4806,   505,   304,   679,
+          8177,   310,   278,  4486,  3958,   393,   727,   338,   385, 19626,
+           393,   338, 17770,  4007,   328,   322,  8519,  3235,   322,   393,
+           372,   338,  1950,   304,  2304,   372,  1699,   540,  1497, 29889,
+           376,  4013,   338,   263,   286,  3055,   479,  1213,   450, 10637,
+         11822,  1497,   393,   540,   750,   451,  3595,   738,  5296,   393,
+          8713,  6392,  5874,  8249,   892,   773,  2594,  2674, 13585, 29879,
+         29889, 12065,   262,  4565,  1497,   540,   471,  7960,   304,   664,
+           411,   278,  3303,  3900,   373,   263,  1353,   310,  4565]],
+       device='cuda:0')
+<s> (CNN)Russian President Vladimir Putin shrugged off repeated questions about the impact of Western sanctions on his nation during a nationally broadcast annual Q&A session. "Sanctions are sanctions," he said. "As far as sanctions are concerned .... (they're) about the need to constrain our development," not just about Ukraine and Crimea. Western sanctions were implemented after Moscow annexed Crimea and pro-Russian separatists battled Ukrainian government forces in the nation's east. Putin predicted the sanctions would not end soon. On the Middle East, Putin said he was "convinced" that the Russian military would succeed in helping Syrian government forces fight Islamic extremists and terrorists. He also said that the United States and other Western nations need to join Russia and Iran in support of the Syrian government. "We have to get rid of the illusion that there is an opposition that is fighting Assad and ISIS and that it is possible to support it," he said. "This is a mirage." The Russian leader said that he had not seen any proof that Syrian government forces were using barrel bombs. Putin front said he was ready to work with the United States on a number of front
+tensor([[    1,  6417, 10993,   383,   340,  1358,   338,  2307,  4249,   278,
+          2983,   310,   278,  1900, 14163,  5165, 19492,   414,   310,   599,
+           931, 29892,   411,   871,  5320, 10769, 26654,   901,  1135,   670,
+         29871, 29896, 29953, 29906, 14433, 29889,   450,  4642, 24607, 29892,
+           951,  5779,   322, 19659,  4412,  7124,  1171, 14455,   373,   304,
+           278,  9088,   408,   263, 14433,  2616,   292,  4771,   362,   472,
+           530,  2671,   297, 29871, 29896, 29929, 29929, 29941,   322,   723,
+           748,   373,   304,  5401, 29871, 29906, 29953, 26091,   411,  5408,
+         29889,  1205,   383,   340,  1358,  8496, 29915, 29873,  9241, 22006,
+           385,  8494,  6490,  6257, 18488,   515, 10769,  1058, 15000,  2645,
+           670,  3152,   313,  2541,   697,  3153, 14872, 10076,  3946,   260,
+         19715,   263, 18345,  4038, 14366,   408,   540,  2983,   670,   599,
+         29899,  8508,  3815, 29889, 21947,  1964,  6059, 29923]],
+       device='cuda:0')
+<s> Robbie Fowler is already among the names of the best Premier League strikers of all time, with only five players scoring more than his 162 goals. The former Liverpool, Leeds and Manchester City hitman broke on to the scene as a goalscoring sensation at Anfield in 1993 and would go on to win 26 caps with England. But Fowler couldn't resist naming an ultimate starting XI from players who featured during his era (with one particular Dutch striker treading a grey area!) as he names his all-star team. GOALKEE
+tensor([[    1,  6417, 10993,   383,   340,  1358,   338,  2307,  4249,   278,
+          2983,   310,   278,  1900, 14163,  5165, 19492,   414,   310,   599,
+           931, 29892,   411,   871,  5320, 10769, 26654,   901,  1135,   670,
+         29871, 29896, 29953, 29906, 14433, 29889,   450,  4642, 24607, 29892,
+           951,  5779,   322, 19659,  4412,  7124,  1171, 14455,   373,   304,
+           278,  9088,   408,   263, 14433,  2616,   292,  4771,   362,   472,
+           530,  2671,   297, 29871, 29896, 29929, 29929, 29941,   322,   723,
+           748,   373,   304,  5401, 29871, 29906, 29953, 26091,   411,  5408,
+         29889,  1205,   383,   340,  1358,  8496, 29915, 29873,  9241, 22006,
+           385,  8494,  6490,  6257, 18488,   515, 10769,  1058, 15000,  2645,
+           670,  3152,   313,  2541,   697,  3153, 14872, 10076,  3946,   260,
+         19715,   263, 18345,  4038, 14366,   408,   540,  2983,   670,   599,
+         29899,  8508,  3815, 29889, 21947,  1964,  6059, 29923, 13171,   448,
+          5310,  1102,  1004,   436,   295,   887,   508, 29915, 29873,   748,
+          2743,   411,   278,  4802,   360,  1662, 29892,   366,   508, 29915,
+         29873,   748,  2743,   411,  5310,  1102,  1004,   436,   295, 29889,
+           940,   471,   263,  2107,  1589, 11356, 29892,  2107, 10122, 29892,
+           322,   540,   471,   263,  4802, 29892,  4802,  2931, 29889,   315,
+          3919,  1525, 29899, 29933, 11375, 29903,   448, 14021,   481,   624,
+           314,   322,  3685, 29875,  9665,  1478,   423,   306, 29915, 29885,
+          2675,   304,   748,   411,  1023,  8442, 29899,  4077,  1960,   393,
+           306, 29915,   345,  5318,  2750,   322,   896,   892,   925, 29403,
+         29889,   306, 29915, 29885,  2675,   304,   748,   411, 14021,   481,
+           624,   314,   322,  3685, 29875,  9665,  1478,   423, 29889,   306,
+         29915, 29885,  2675,   304,  1708,   263,  1250,  2211, 29892,   577,
+           306, 29915, 29885,  2675,   304,  1925,   624,   314,   297]],
+       device='cuda:0')
+<s> Robbie Fowler is already among the names of the best Premier League strikers of all time, with only five players scoring more than his 162 goals. The former Liverpool, Leeds and Manchester City hitman broke on to the scene as a goalscoring sensation at Anfield in 1993 and would go on to win 26 caps with England. But Fowler couldn't resist naming an ultimate starting XI from players who featured during his era (with one particular Dutch striker treading a grey area!) as he names his all-star team. GOALKEEPER - Peter Schmeichel You can't go wrong with the big Dane, you can't go wrong with Peter Schmeichel. He was a great keeper, great presence, and he was a big, big character. CENTRE-BACKS - Jaap Stam and Sami Hyypia I'm going to go with two centre-halves that I've played against and they were just immense. I'm going to go with Jaap Stam and Sami Hyypia. I'm going to play a back three, so I'm going to put Stam in
+total time :504.25554s, latency :0.76057s, decoding step: 663, large model step: 75, 8.84
+[2024-02-26 09:33:03,043] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='dataset/c4_small.json', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-C4-7b-70b-stochastic-2.pt', start=0, end=5, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, seed=17, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+tensor([[    1,  2973,   263, 13807,  1106,   393,  1838, 30010, 29873,  2635,
+         29892,   445,   350,   575,  3391,  4891,  2343,  2362,   262,  1601,
+         29877,  6837,   261, 18751,   338,  4922,   363,  3785,   322, 13807,
+         27683, 18901, 29889,  5293,  1601,   711,  2029, 15483,   372, 29497,
+          6837,   267,   596,  7375,   322, 11220,  4094, 11421, 29892,   322,
+          7805,   263,  1835,   701, 19863,   304,  5948,  1712,   470,  4320,
+          1283,   596,  2362,   262, 29559,  5053, 29879, 29889,    13,  4013,
+         13807,  2362,   262, 18751,   338, 13907,   363,   599,  4094, 12959,
+          6757,   313,  1195, 29889, 29871, 29900, 29889, 29896,  2594, 29897,
+          5662,  3864,   263, 13568,  6288,  4180,  1090,   599, 10261,  5855,
+         29889,  5373,  2782,   304,  2317,   278,  1243,   310,   931, 29892,
+           372, 30010, 29879, 12012,  2955,   515,  9167,  1771,   465,   577,
+           372,  2113, 30010, 29873, 21580, 29892, 25985,   295]],
+       device='cuda:0')
+<s> With a traditional look that doesn’t date, this Bensham cross head basin mono mixer tap is perfect for period and traditional bathrooms. Using monobloc technology it efficiently mixes your hot and cold water supply, and includes a pop up waste to easily contain or cast off your basin soap suds.
+This traditional basin tap is suitable for all water pressure systems (min. 0.1 bar) ensuring a fantastic performance under all UK conditions. Built to stand the test of time, it’s manufactured from Virgin Brass so it won’t rust, nickel
+tensor([[    1,  2973,   263, 13807,  1106,   393,  1838, 30010, 29873,  2635,
+         29892,   445,   350,   575,  3391,  4891,  2343,  2362,   262,  1601,
+         29877,  6837,   261, 18751,   338,  4922,   363,  3785,   322, 13807,
+         27683, 18901, 29889,  5293,  1601,   711,  2029, 15483,   372, 29497,
+          6837,   267,   596,  7375,   322, 11220,  4094, 11421, 29892,   322,
+          7805,   263,  1835,   701, 19863,   304,  5948,  1712,   470,  4320,
+          1283,   596,  2362,   262, 29559,  5053, 29879, 29889,    13,  4013,
+         13807,  2362,   262, 18751,   338, 13907,   363,   599,  4094, 12959,
+          6757,   313,  1195, 29889, 29871, 29900, 29889, 29896,  2594, 29897,
+          5662,  3864,   263, 13568,  6288,  4180,  1090,   599, 10261,  5855,
+         29889,  5373,  2782,   304,  2317,   278,  1243,   310,   931, 29892,
+           372, 30010, 29879, 12012,  2955,   515,  9167,  1771,   465,   577,
+           372,  2113, 30010, 29873, 21580, 29892, 25985,   295,   715,   630,
+           363,   263,  9560,  8341, 29892,   322, 10664,   491,   263, 29871,
+         29896, 29900,  1629, 18818, 29889,     2]], device='cuda:0')
+<s> With a traditional look that doesn’t date, this Bensham cross head basin mono mixer tap is perfect for period and traditional bathrooms. Using monobloc technology it efficiently mixes your hot and cold water supply, and includes a pop up waste to easily contain or cast off your basin soap suds.
+This traditional basin tap is suitable for all water pressure systems (min. 0.1 bar) ensuring a fantastic performance under all UK conditions. Built to stand the test of time, it’s manufactured from Virgin Brass so it won’t rust, nickel plated for a beautiful finish, and covered by a 10 year guarantee.</s>
+tensor([[    1,  9208,  8788,   491,  9899,   700, 29900, 29929,  5846, 29871,
+         29906, 29892, 29871, 29906, 29900, 29896, 29947,   472, 29871, 29947,
+         29901, 29945, 29929, 29901, 29946, 29941, 11278,   402, 11490,  1919,
+          8788, 29871, 29896,  3064,   297,  3001, 29889,    13, 29898,  6585,
+           292,   515,   383,   403, 29914,   303,   388,  4646, 29892,   306,
+          1016, 29915, 29873,  1348,   372, 14393,   297,  4696,   393,   366,
+           766,  4561, 29897,  3374,   366, 29991,    13,  8897,  8788,   491,
+          2812,  2638,   681,  5846, 29871, 29906, 29892, 29871, 29906, 29900,
+         29896, 29947,   472, 29871, 29929, 29901, 29941, 29953, 29901, 29941,
+         29896, 11278,   402, 11490,  1919,  8788, 29871, 29896,  3064,   297,
+          3001, 29889,    13, 10773, 23553,   723,   367,  2691, 29892,  3969,
+           297,  6564, 29991,    13, 25271,   366,   577,  1568,   297, 25215,
+           749, 29892,   322,  6975,   263,  7575,  2462, 29991]],
+       device='cuda:0')
+<s> Last edited by Gabdu09 December 2, 2018 at 8:59:43 PM GMT , edited 1 times in total.
+(Opening from Fate/stay night, I don't think it belongs in music that you dislike) Thank you!
+Last edited by Emilious December 2, 2018 at 9:36:31 PM GMT , edited 1 times in total.
+Any difficulties would be fine, thanks in advance!
+Thank you so much in Advance, and Have a nice day!
+tensor([[    1,  9208,  8788,   491,  9899,   700, 29900, 29929,  5846, 29871,
+         29906, 29892, 29871, 29906, 29900, 29896, 29947,   472, 29871, 29947,
+         29901, 29945, 29929, 29901, 29946, 29941, 11278,   402, 11490,  1919,
+          8788, 29871, 29896,  3064,   297,  3001, 29889,    13, 29898,  6585,
+           292,   515,   383,   403, 29914,   303,   388,  4646, 29892,   306,
+          1016, 29915, 29873,  1348,   372, 14393,   297,  4696,   393,   366,
+           766,  4561, 29897,  3374,   366, 29991,    13,  8897,  8788,   491,
+          2812,  2638,   681,  5846, 29871, 29906, 29892, 29871, 29906, 29900,
+         29896, 29947,   472, 29871, 29929, 29901, 29941, 29953, 29901, 29941,
+         29896, 11278,   402, 11490,  1919,  8788, 29871, 29896,  3064,   297,
+          3001, 29889,    13, 10773, 23553,   723,   367,  2691, 29892,  3969,
+           297,  6564, 29991,    13, 25271,   366,   577,  1568,   297, 25215,
+           749, 29892,   322,  6975,   263,  7575,  2462, 29991,    13,  8897,
+          8788,   491,   612, 10578,   326,  1169, 29884,  5846, 29871, 29906,
+         29892, 29871, 29906, 29900, 29896, 29947,   472, 29871, 29896, 29896,
+         29901, 29896, 29900, 29901, 29906, 29941, 11278,   402, 11490,  1919,
+          8788, 29871, 29896,  3064,   297,  3001, 29889,     2]],
+       device='cuda:0')
+<s> Last edited by Gabdu09 December 2, 2018 at 8:59:43 PM GMT , edited 1 times in total.
+(Opening from Fate/stay night, I don't think it belongs in music that you dislike) Thank you!
+Last edited by Emilious December 2, 2018 at 9:36:31 PM GMT , edited 1 times in total.
+Any difficulties would be fine, thanks in advance!
+Thank you so much in Advance, and Have a nice day!
+Last edited by Yoshimitsu December 2, 2018 at 11:10:23 PM GMT , edited 1 times in total.</s>
+tensor([[    1,  1094, 14717,   528,  3554,   748,  5020,   669, 19509,   338,
+         21643, 29889,   960,   366, 30010,   345,  2355,   697,   297,   596,
+          4038,   748,   322,  1207,  7875,   411,   963, 29892,   896, 30010,
+           276, 19780, 29892,  7134,   519, 19589,   322,  5360,   304,  5193,
+          2734, 29991,    13,  6295, 12528,  1584,   278,  2646,   600,  4812,
+           413,  4841,   864,   263,  8424, 29991,    13, 29909, 26800,   368,
+          4802,  2507,   449, 10423,   278,  3787,   472, 29871, 29953,  3358,
+           322,  8455,   349,  2650,  2355,   304,   664, 22965, 17068,  2343,
+          7345,  6609,   322,  6820, 11994,   373,   920,   304,   671,   963,
+         29889,  1346, 27031,   278,  2826,   304,  2507,   372,   373, 29892,
+          5503,   372,  1449,   304,  2507,   372,  1283,  8643,    13, 14084,
+           263,  2846, 11916,  4312,   769, 29889,    13, 29967,  3470,   294,
+           322,  9127,   528,  1862, 29892,   278,  4922, 10296]],
+       device='cuda:0')
+<s> As sports shops go Up & Running is ace. If you’ve got one in your area go and make friends with them, they’re friendly, knowledgeable folk and love to talk running!
+So cool even the graffiti kids want a piece!
+A surprisingly big turnout filled the store at 6pm and manager Pete got to work distributing headtorches and giving instructions on how to use them. “Push the button to turn it on, push it again to turn it off”.
+Just a few samples needed then.
+Jaffas and gel shots, the perfect combination
+tensor([[    1,  1094, 14717,   528,  3554,   748,  5020,   669, 19509,   338,
+         21643, 29889,   960,   366, 30010,   345,  2355,   697,   297,   596,
+          4038,   748,   322,  1207,  7875,   411,   963, 29892,   896, 30010,
+           276, 19780, 29892,  7134,   519, 19589,   322,  5360,   304,  5193,
+          2734, 29991,    13,  6295, 12528,  1584,   278,  2646,   600,  4812,
+           413,  4841,   864,   263,  8424, 29991,    13, 29909, 26800,   368,
+          4802,  2507,   449, 10423,   278,  3787,   472, 29871, 29953,  3358,
+           322,  8455,   349,  2650,  2355,   304,   664, 22965, 17068,  2343,
+          7345,  6609,   322,  6820, 11994,   373,   920,   304,   671,   963,
+         29889,  1346, 27031,   278,  2826,   304,  2507,   372,   373, 29892,
+          5503,   372,  1449,   304,  2507,   372,  1283,  8643,    13, 14084,
+           263,  2846, 11916,  4312,   769, 29889,    13, 29967,  3470,   294,
+           322,  9127,   528,  1862, 29892,   278,  4922, 10296, 29991,    13,
+           855,   273,  2330,   278,   624,   351,  1584,  1510,   304,  1510,
+           670,  2304, 29991,    13, 26526,   650,   471,  1532,   521,  3096,
+           287,   411,  1009,  3005,   774,   583,   322,   591,   599,  8957,
+          1623,   304,  6505,   278,   560,   568,  1065,  8397,  8957,  1847,
+           372,   714,   297,   278,  6501,   373,   278,  4802,  4315, 29889,
+            13,  2855,   278, 19576,   338, 30098, 30098, 29889, 29968,  6537,
+          8069,  1522, 27800, 29991,    13, 13555,   278,  8175,   591,   599,
+          2343,   287,   714,   363,   263, 29871, 29946, 17967,  1065,  2820,
+           278,  4272, 29889,    13,  3112,   471,   263,  2107,  4646,   322,
+           306,   508, 30010, 29873,  4480,   363,   278,  2446,   697, 29991,
+            13, 29956,   340, 29892,   825,   263,  2107,  1741, 29991,    13,
+         29902,   750,   694,  2969,   896,   437,  4959,   763,   445, 29991,
+             2]], device='cuda:0')
+<s> As sports shops go Up & Running is ace. If you’ve got one in your area go and make friends with them, they’re friendly, knowledgeable folk and love to talk running!
+So cool even the graffiti kids want a piece!
+A surprisingly big turnout filled the store at 6pm and manager Pete got to work distributing headtorches and giving instructions on how to use them. “Push the button to turn it on, push it again to turn it off”.
+Just a few samples needed then.
+Jaffas and gel shots, the perfect combination!
+Stanley the Stag even show to show his support!
+Everyone was well chuffed with their freebies and we all batt down to watch the elite runners battling it out in the dark on the big screen.
+And the winner is…….Kenenisa Bekele!
+After the race we all headed out for a 4 mile run around the city.
+It was a great night and I can’t wait for the next one!
+Wow, what a great event!
+I had no idea they do events like this!</s>
+tensor([[    1,   450, 27150,  3074,  5057,  4523, 15521, 14311, 22981,  1346,
+          1576, 11143,  4702,   655,   333,  3995,   278,  9636, 29991,    13,
+          4013,  3942, 29899, 18326,   368,  1510, 23522,   596, 25448, 17944,
+          4890,   304,  2834,   373,   278, 19722,  8612,  2105,  1974,  7408,
+         29889,    13,  1252,   546,  5597,   278,  5192, 29899, 29893,  2817,
+           292,  5828,   310, 22063,   319, 12836, 29892,  4088,   323,   768,
+           265, 30010, 29879,  4123,   342,  8750, 29892,  1058, 28688,   304,
+         12359,   434,   278,  5199, 10787, 14713,   297,   278,  3186,  2038,
+         29889,  2296,   289,  1191,  2708,   411,   278, 16126,  7205,   281,
+          2335, 29892, 18373,  2497, 29892,   902,   263,  1657, 29892,   304,
+         11302,   902, 12464,   363, 21152, 29889,  1205, 29892,   278,   289,
+          1191,   475,   338,   451,   825,   372,  2444, 29892,   322,   319,
+         12836,  4225,   278,  1371,   310,   902,  2927,  1319]],
+       device='cuda:0')
+<s> The Pittsburg High School Theatre department presents “The Little Mermaid,” the musical!
+This family-friendly show brings your favorite Disney characters to life on the Memorial Auditorium stage.
+Experience the heart-warming story of Princess Ariel, King Triton’s youngest daughter, who wishes to pursue the human Prince Eric in the world above. She bargains with the evil sea witch, Ursula, her aunt, to trade her tail for legs. But, the bargain is not what it seems, and Ariel needs the help of her colorful
+tensor([[    1,   450, 27150,  3074,  5057,  4523, 15521, 14311, 22981,  1346,
+          1576, 11143,  4702,   655,   333,  3995,   278,  9636, 29991,    13,
+          4013,  3942, 29899, 18326,   368,  1510, 23522,   596, 25448, 17944,
+          4890,   304,  2834,   373,   278, 19722,  8612,  2105,  1974,  7408,
+         29889,    13,  1252,   546,  5597,   278,  5192, 29899, 29893,  2817,
+           292,  5828,   310, 22063,   319, 12836, 29892,  4088,   323,   768,
+           265, 30010, 29879,  4123,   342,  8750, 29892,  1058, 28688,   304,
+         12359,   434,   278,  5199, 10787, 14713,   297,   278,  3186,  2038,
+         29889,  2296,   289,  1191,  2708,   411,   278, 16126,  7205,   281,
+          2335, 29892, 18373,  2497, 29892,   902,   263,  1657, 29892,   304,
+         11302,   902, 12464,   363, 21152, 29889,  1205, 29892,   278,   289,
+          1191,   475,   338,   451,   825,   372,  2444, 29892,   322,   319,
+         12836,  4225,   278,  1371,   310,   902,  2927,  1319,  7875, 29892,
+          2379,   618,   261,   278,  9427, 29892,  2522,  4774,   280,   278,
+           409,   351,   913, 29892,   322, 26631,   278,   274,  4201, 29892,
+           304,  4078,   902, 29889,    13,  1576,  1510,  5680,   278,  5969,
+          1237,   310,  1887,  1880,  3762,  8041, 29889,    13,  1576,  1510,
+           674,   367,  8560,   472, 29871, 29955,   282, 29889, 29885, 29889,
+          3786, 29871, 29896, 29896, 29899, 29896, 29941, 29892,   411,   263,
+         29871, 29906,   282, 29889, 29885, 29889,  1775,   457, 29872,   373,
+          3786, 29871, 29896, 29946, 29889,    13, 29911,   860,  1691,   526,
+           395, 29896, 29900,   322,   508,   367, 20848,   472,   278, 19722,
+          8612,  2105,  1974,  3800,  8034, 29889,     2]], device='cuda:0')
+<s> The Pittsburg High School Theatre department presents “The Little Mermaid,” the musical!
+This family-friendly show brings your favorite Disney characters to life on the Memorial Auditorium stage.
+Experience the heart-warming story of Princess Ariel, King Triton’s youngest daughter, who wishes to pursue the human Prince Eric in the world above. She bargains with the evil sea witch, Ursula, her aunt, to trade her tail for legs. But, the bargain is not what it seems, and Ariel needs the help of her colorful friends, Flounder the fish, Scuttle the seagull, and Sebastian the crab, to save her.
+The show features the talents of local high school students.
+The show will be performed at 7 p.m. April 11-13, with a 2 p.m. matinee on April 14.
+Tickets are $10 and can be purchased at the Memorial Auditorium box office.</s>
+tensor([[    1,  1816, 17365, 29892,   306,   471,   297,   278,  6501,   363,
+         24646,  1048,   445,  4700, 29889,  2688,   526,   763,  1632,   283,
+          1112, 29892,   470,   916, 11840,   763,   393,   541,  2253, 29991,
+          2688,   526,   599,  1048,   278, 27335, 29889,   365,  1862,   310,
+           319,  1529, 29999,  4214,   316,  1338,   411,  7788,   322,  2712,
+           925,   363, 27335, 29991,  1816, 17365,   748,  1423,   963,   714,
+         29889,    13,  4164,   373,   445, 15373,   304,  2343,   304,   278,
+          4700, 29889,    13,  3644,   366,  2343,   727,   515,   445,  1544,
+          1244,   322,  1804,   701,   366,   674,   679,   263, 29871, 29896,
+         29900, 29995,  2313,   792,   373,   596,  1407,   937, 20590,   313,
+          9984,  1854,   366,  2649,   963,   306,  2665,   366,   304,   679,
+           445,  2313,   792,   467,  1670,   526,  2337, 21863,   292,  3889,
+           316,  1338,  2675,   373, 29892,   322,   777,   310]],
+       device='cuda:0')
+<s> Seriously, I was in the dark for ages about this website. They are like Groupon, or other sites like that but better! They are all about the teachers. Lots of AMAZING deals with resources and things just for teachers! Seriously go check them out.
+Click on this photo to head to the website.
+If you head there from this link here and sign up you will get a 10% discount on your very first purchase (Make sure you tell them I sent you to get this discount). There are always amazing free deals going on, and some of
+tensor([[    1,  1816, 17365, 29892,   306,   471,   297,   278,  6501,   363,
+         24646,  1048,   445,  4700, 29889,  2688,   526,   763,  1632,   283,
+          1112, 29892,   470,   916, 11840,   763,   393,   541,  2253, 29991,
+          2688,   526,   599,  1048,   278, 27335, 29889,   365,  1862,   310,
+           319,  1529, 29999,  4214,   316,  1338,   411,  7788,   322,  2712,
+           925,   363, 27335, 29991,  1816, 17365,   748,  1423,   963,   714,
+         29889,    13,  4164,   373,   445, 15373,   304,  2343,   304,   278,
+          4700, 29889,    13,  3644,   366,  2343,   727,   515,   445,  1544,
+          1244,   322,  1804,   701,   366,   674,   679,   263, 29871, 29896,
+         29900, 29995,  2313,   792,   373,   596,  1407,   937, 20590,   313,
+          9984,  1854,   366,  2649,   963,   306,  2665,   366,   304,   679,
+           445,  2313,   792,   467,  1670,   526,  2337, 21863,   292,  3889,
+           316,  1338,  2675,   373, 29892,   322,   777,   310,   278,  1900,
+           316,  1338,   306,   505,  3595,   526,   515,   445,  3268, 29889,
+            13, 29902,   626,  1286,   385, 23736,   403,   363,   445,  3268,
+           577,  1207,  1854,   366,  1804,   701,   322,  2649,   963,   306,
+          2665,   366, 29889,    13, 29909, 29893, 14151, 29892,   306, 27222,
+         29915, 29873,  6091,   310,   445,  3268,  1434, 29892,  3969,   363,
+         19383, 29991,    13, 16894,   363, 19383, 29889,   306, 29915,   345,
+          2360,  6091,   310,   445,  3268,  1434, 29889,   306, 29915,   345,
+          1304,  1632,   283,  1112,   322, 26176, 10307, 29889,   306, 29915,
+           645,   505,   304,  1423,   372,   714, 29889,     2]],
+       device='cuda:0')
+<s> Seriously, I was in the dark for ages about this website. They are like Groupon, or other sites like that but better! They are all about the teachers. Lots of AMAZING deals with resources and things just for teachers! Seriously go check them out.
+Click on this photo to head to the website.
+If you head there from this link here and sign up you will get a 10% discount on your very first purchase (Make sure you tell them I sent you to get this discount). There are always amazing free deals going on, and some of the best deals I have seen are from this site.
+I am now an affiliate for this site so make sure you sign up and tell them I sent you.
+Awesome, I hadn't heard of this site before, thanks for sharing!
+Thanks for sharing. I've never heard of this site before. I've used Groupon and Living Social. I'll have to check it out.</s>
+total time :246.34723s, latency :0.66580s, decoding step: 370, large model step: 36, 10.277777777777779
+[2024-02-26 09:39:14,128] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='openwebtext', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-OpenWebText-7b-70b-stochastic-2.pt', start=0, end=5, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, seed=17, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+tensor([[    1, 28962, 29928,  8186, 29979, 29892,  8314,   813,   450,  9870,
+         10974, 24383,  5320,  1757,   373, 24211,  1058,   896,  1497,   750,
+          1063, 18987, 15115,   391, 16661,   304,   367,  8988,   714,  2446,
+          4723,   355, 29892,  2645,   263,  4797,  8753, 22394, 29889, 15512,
+          7668, 15293, 13896,  1501,  1497,   278,  1757,   750,  1063, 20603,
+           491,   278, 16427,   293,  4306,  9413,   391,  2318, 29889,    13,
+            13,  1576, 10974,  1497,   896, 13112,   393,  1023,   310,   278,
+          1757, 29892,  1716, 29871, 29896, 29947, 29892,   750,  1063, 10223,
+           292,   304,  5337, 10974, 13049,   297, 22103, 29892,  8314, 30010,
+         29879,  1473, 29899, 27489,   342,  4272, 29892,  2645,   278,   530,
+         29920,   562,  8373,  8753, 22394,   373,  3786, 29871, 29906, 29945,
+         29889,   530, 29920,   562,  8373,  4207,   943,   278, 25325,   310,
+         13230,   515,   278,  9870,   322,  1570, 13450,  8811]],
+       device='cuda:0')
+<s> SYDNEY, Australia — The Australian police arrested five men on Saturday who they said had been planning terrorist attacks to be carried out next weekend, during a national holiday. Prime Minister Tony Abbott said the men had been inspired by the Islamic State extremist group.
+
+The police said they believed that two of the men, both 18, had been preparing to attack police officers in Melbourne, Australia’s second-largest city, during the Anzac Day holiday on April 25. Anzac Day honors the landing of troops from the Australian and New Zealand Army
+tensor([[    1, 28962, 29928,  8186, 29979, 29892,  8314,   813,   450,  9870,
+         10974, 24383,  5320,  1757,   373, 24211,  1058,   896,  1497,   750,
+          1063, 18987, 15115,   391, 16661,   304,   367,  8988,   714,  2446,
+          4723,   355, 29892,  2645,   263,  4797,  8753, 22394, 29889, 15512,
+          7668, 15293, 13896,  1501,  1497,   278,  1757,   750,  1063, 20603,
+           491,   278, 16427,   293,  4306,  9413,   391,  2318, 29889,    13,
+            13,  1576, 10974,  1497,   896, 13112,   393,  1023,   310,   278,
+          1757, 29892,  1716, 29871, 29896, 29947, 29892,   750,  1063, 10223,
+           292,   304,  5337, 10974, 13049,   297, 22103, 29892,  8314, 30010,
+         29879,  1473, 29899, 27489,   342,  4272, 29892,  2645,   278,   530,
+         29920,   562,  8373,  8753, 22394,   373,  3786, 29871, 29906, 29945,
+         29889,   530, 29920,   562,  8373,  4207,   943,   278, 25325,   310,
+         13230,   515,   278,  9870,   322,  1570, 13450,  8811, 16408, 29892,
+          5208,  3466,  5079, 29892, 26459, 29892,   297,  2787,  3362,   306,
+         29892,   322,   338,  8900,   411, 27470,  5147,  9857,   583,   322,
+           610,  3076, 29889,    13,    13,  1576, 10974,  1497,   278,   916,
+          2211, 12326, 29879, 29892, 24646, 29871, 29896, 29947,   304, 29871,
+         29906, 29896, 29892,   750,  1063, 10223,   292,   263,  5004,  5337,
+         29889,   450, 10974,  1258,   451,  1827,   988,   278, 16661,   892,
+           304,  2125,  2058, 29889,    13,  1576,  1757, 29892,   599,  9870,
+         18363, 29892,   892, 24383,   297,  6795,   357,   729,  1608,  1153,
+          4841,   373, 24211,  7250,   297, 22103, 29889,    13,  1576, 21142,
+          1497,   697,   310,   278,  1757,   750,  1063,  3907,  3632,   331,
+          1943, 13585, 29879, 29889,   450, 10974,  1497,   896,   750,  1476,
+           263,  3632,   331,  1943, 20389,   573,  4742,  2645,   278,  1153,
+          4841, 29892,   408,  1532,   408,  7672]], device='cuda:0')
+<s> SYDNEY, Australia — The Australian police arrested five men on Saturday who they said had been planning terrorist attacks to be carried out next weekend, during a national holiday. Prime Minister Tony Abbott said the men had been inspired by the Islamic State extremist group.
+
+The police said they believed that two of the men, both 18, had been preparing to attack police officers in Melbourne, Australia’s second-largest city, during the Anzac Day holiday on April 25. Anzac Day honors the landing of troops from the Australian and New Zealand Army Corps, Gallipoli, Turkey, in World War I, and is observed with dawn ceremonies and parades.
+
+The police said the other three suspects, ages 18 to 21, had been preparing a separate attack. The police did not say where the attacks were to take place.
+The men, all Australian citizens, were arrested in counterterrorism raids on Saturday morning in Melbourne.
+The authorities said one of the men had been making homemade bombs. The police said they had found a homemade explosive device during the raids, as well as mach
+tensor([[    1,   512,   385, 15593,   411, 14129, 30010, 29879,   796,  1662,
+           365,  4657,   393, 30010, 29879,   731,   304,  4799,  2446,  4723,
+         29892, 14297, 24218, 14985,   262, 16725,   393,   540, 30010, 29879,
+          5279,  1985,   278,  1101,   701,   304,   476,  1384, 29872,  3122,
+         30010, 29879,   612,  3905, 29920,   375, 29889,   405,  2303, 13676,
+           393,   896,   526,  5279,  1346, 23261,   472, 20982,  7014, 30024,
+           363,   278,  3769, 29889,    13,    13,   797,   278, 15593, 29892,
+         14985,   262,   884,  1162,   792,   287,   278,   937,   931,   393,
+          3122, 10018,  1075,   612,  3905, 29920,   375,  1261,   359, 29901,
+            13,    13, 30015,  8439,   892, 15376,   310,  2107,  7014,   322,
+           727,   892,  1784,  1784, 16257,   322,   591, 29616,   304,  4129,
+          4208, 29889,   940, 10437,  2996,   975,   322,  1497,  5129, 29902,
+           281,  9713,  2041,  1708,   366,   590,   716,  3769]],
+       device='cuda:0')
+<s> In an interview with BBC’s Zane Lowe that’s set to air next week, producer Rick Rubin confirmed that he’s currently working the follow up to Kanye West’s Yeezus. NME reports that they are currently “looking at vocal ideas” for the album.
+
+In the interview, Rubin also recounted the first time that West showed him Yeezus demos:
+
+“There were loads of great ideas and there were many many tracks and we listened to everything together. He originally came over and said ‘I wanna come play you my new album
+tensor([[    1,   512,   385, 15593,   411, 14129, 30010, 29879,   796,  1662,
+           365,  4657,   393, 30010, 29879,   731,   304,  4799,  2446,  4723,
+         29892, 14297, 24218, 14985,   262, 16725,   393,   540, 30010, 29879,
+          5279,  1985,   278,  1101,   701,   304,   476,  1384, 29872,  3122,
+         30010, 29879,   612,  3905, 29920,   375, 29889,   405,  2303, 13676,
+           393,   896,   526,  5279,  1346, 23261,   472, 20982,  7014, 30024,
+           363,   278,  3769, 29889,    13,    13,   797,   278, 15593, 29892,
+         14985,   262,   884,  1162,   792,   287,   278,   937,   931,   393,
+          3122, 10018,  1075,   612,  3905, 29920,   375,  1261,   359, 29901,
+            13,    13, 30015,  8439,   892, 15376,   310,  2107,  7014,   322,
+           727,   892,  1784,  1784, 16257,   322,   591, 29616,   304,  4129,
+          4208, 29889,   940, 10437,  2996,   975,   322,  1497,  5129, 29902,
+           281,  9713,  2041,  1708,   366,   590,   716,  3769, 30010,   322,
+           306,  2714,   591,   723, 11621,   304,  2211,   470,  3023, 12516,
+         29889,   940,  5318,   592, 29892,   763, 29892,  1023,  6199,   310,
+          4696,  3178,    13, 24709,   263,   734, 29440,   363,   278, 15593,
+          2400, 29889,    13, 24709,   612,  3905, 29920,   375,  1244, 29889,
+             2]], device='cuda:0')
+<s> In an interview with BBC’s Zane Lowe that’s set to air next week, producer Rick Rubin confirmed that he’s currently working the follow up to Kanye West’s Yeezus. NME reports that they are currently “looking at vocal ideas” for the album.
+
+In the interview, Rubin also recounted the first time that West showed him Yeezus demos:
+
+“There were loads of great ideas and there were many many tracks and we listened to everything together. He originally came over and said ‘I wanna come play you my new album’ and I thought we would listen to three or four songs. He played me, like, two hours of music.”
+Watch a teaser for the interview below.
+Watch Yeezus here.</s>
+tensor([[    1,  1551,   323,   300,  3780,   322,   830, 21382,    13,    13,
+          7789,  9789,   350,  1267, 13707, 10266, 29871, 29896, 29906,  5306,
+         29871, 29906, 29900, 29896, 29945,    13,    13, 29902, 30010, 29885,
+           278,  2924,   310, 27922,   393,  4188,   267,   304,  2334,  4129,
+          6142, 29889,  2193, 30010, 29879,   451,   304,  1827,   306,  1016,
+         30010, 29873,  4658,   297,   916,  2305, 30010, 29879,   664, 29889,
+          1205,  3265, 29892,   306,  4658,   393,   565,   306,   437,  1554,
+          6142, 29892,   306,   674, 11581,   263,  3287,   901,   515,   372,
+          1135,   565,   306,   671,  4856,  1683, 30010, 29879,  5314, 29889,
+          1152,  2777, 29892,   306, 30010,   345,  8762,   590,  1914,  4943,
+          4603, 13812,   297,   315, 29892,   773,   590,  1407,  1914,   315,
+           848, 12286,  3489, 29889,  7963,  3730,   306, 30010,   645,  1400,
+           263,  2586,   901,  1048,  1906,   297,   278,  5434]],
+       device='cuda:0')
+<s> On Tetris and Reimplementation
+
+Stephen Brennan • 12 June 2015
+
+I’m the kind of programmer that likes to implement everything myself. That’s not to say I don’t believe in other people’s work. But rather, I believe that if I do something myself, I will gain a lot more from it than if I use someone else’s implementation. For instance, I’ve implemented my own regular expression parser in C, using my very own C data structures library. Hopefully I’ll post a bit more about those in the future
+tensor([[    1,  1551,   323,   300,  3780,   322,   830, 21382,    13,    13,
+          7789,  9789,   350,  1267, 13707, 10266, 29871, 29896, 29906,  5306,
+         29871, 29906, 29900, 29896, 29945,    13,    13, 29902, 30010, 29885,
+           278,  2924,   310, 27922,   393,  4188,   267,   304,  2334,  4129,
+          6142, 29889,  2193, 30010, 29879,   451,   304,  1827,   306,  1016,
+         30010, 29873,  4658,   297,   916,  2305, 30010, 29879,   664, 29889,
+          1205,  3265, 29892,   306,  4658,   393,   565,   306,   437,  1554,
+          6142, 29892,   306,   674, 11581,   263,  3287,   901,   515,   372,
+          1135,   565,   306,   671,  4856,  1683, 30010, 29879,  5314, 29889,
+          1152,  2777, 29892,   306, 30010,   345,  8762,   590,  1914,  4943,
+          4603, 13812,   297,   315, 29892,   773,   590,  1407,  1914,   315,
+           848, 12286,  3489, 29889,  7963,  3730,   306, 30010,   645,  1400,
+           263,  2586,   901,  1048,  1906,   297,   278,  5434, 29889,    13,
+            13,  3112, 30010, 29879,   263,  8515,  2655,   393,   306, 30010,
+           345,  2309,   445, 29892,   541,   306, 30010,   345,  2869,  8762,
+           323,   300,  3780,   313,  1552,  3748, 29897,  8951, 29889,   450,
+           937,   931,   471,  2645,   590,   937,  1629,   310,  1090,  5105,
+         27240,  6559, 29892,   773,  3355, 29889,   450,  1473,   931,   471,
+          2645,   590,  1473,  1629, 29892,   773,   315, 29889,    13,    13,
+         29902, 30010,   345,  1951,  5714,   278,  3355,   775, 29892,   541,
+           306, 30010,   345,  1603,  2355,   278,   315, 29889,   306, 30010,
+           345,  1063,  7291,  1048, 10594,   372,   701,   373, 25492, 29892,
+          1951,   372, 30010, 29879,  1603,   263, 12558, 27189,  8424,   310,
+           775, 29889,    13,    13,  6295, 29892,   825,   526,   278, 23633,
+           310, 16049,  1554,  7535, 29973,    13,    13,  1576,   937, 14169,
+           338,   393,   372, 30010, 29879,  2090, 29889,   306, 13389,  8720,
+         29892,   322]], device='cuda:0')
+<s> On Tetris and Reimplementation
+
+Stephen Brennan • 12 June 2015
+
+I’m the kind of programmer that likes to implement everything myself. That’s not to say I don’t believe in other people’s work. But rather, I believe that if I do something myself, I will gain a lot more from it than if I use someone else’s implementation. For instance, I’ve implemented my own regular expression parser in C, using my very own C data structures library. Hopefully I’ll post a bit more about those in the future.
+
+It’s a strange thing that I’ve done this, but I’ve actually implemented Tetris (the game) twice. The first time was during my first year of undergraduate study, using Java. The second time was during my second year, using C.
+
+I’ve since lost the Java code, but I’ve still got the C. I’ve been thinking about putting it up on GitHub, since it’s still a fairly decent piece of code.
+
+So, what are the benefits of implementing something yourself?
+
+The first benefit is that it’s fun. I enjoy programming, and
+tensor([[    1,  9626, 12952,   891, 28320,   891,   390,  1799,  5169,  5779,
+           891, 11856, 27822, 29892,  2610, 29871, 29896, 29946, 29892, 29871,
+         29906, 29900, 29896, 29906,  6371,   310,  8046, 29901,  5310,   317,
+         18939,  7618,  4637,   304,  7408,  1023,  5401,   297,  7510, 17960,
+           491,   476,  1508, 18588,   472, 29871, 29947, 29901, 29945, 29941,
+         11278,   382,  1254,    13,    13, 29907, 14404, 29901,  1019,  8045,
+         19914, 29892, 23613,   830,  4011,   322, 17212, 29892,  6371,   310,
+          8046, 10443, 22250,   557,  4922,  1492,  1361,   289,   355,   322,
+           364,  2247,  3448,   515, 10727, 29879,  1358, 29892, 17430,  5310,
+           317, 18939,   313, 29931,  8105,   335,   294, 29899, 29907,   812,
+           898,   744, 29897,  3512,   263,  4922,  1023,   363,  1023,   297,
+           278,  6371,   310,  8046,   373, 27822, 29892,  4444,   701,   670,
+           269,  2158,  7970,   322,  7618,  5921,   304,   278]],
+       device='cuda:0')
+<s> Current Articles | Archives | RSS Feeds | Search Monday, May 14, 2012 Tour of California: Peter Sagan cruises to stage two win in Santa Cruz by Kyle Moore at 8:53 PM EST
+
+Categories: Pro Cycling, Race Reports and Results, Tour of California Young Slovak perfect right hand bend and rides away from Haussler, Howard Peter Sagan (Liquigas-Cannondale) went a perfect two for two in the Tour of California on Monday, setting up his sprint perfectly and cruising to the
+tensor([[    1,  9626, 12952,   891, 28320,   891,   390,  1799,  5169,  5779,
+           891, 11856, 27822, 29892,  2610, 29871, 29896, 29946, 29892, 29871,
+         29906, 29900, 29896, 29906,  6371,   310,  8046, 29901,  5310,   317,
+         18939,  7618,  4637,   304,  7408,  1023,  5401,   297,  7510, 17960,
+           491,   476,  1508, 18588,   472, 29871, 29947, 29901, 29945, 29941,
+         11278,   382,  1254,    13,    13, 29907, 14404, 29901,  1019,  8045,
+         19914, 29892, 23613,   830,  4011,   322, 17212, 29892,  6371,   310,
+          8046, 10443, 22250,   557,  4922,  1492,  1361,   289,   355,   322,
+           364,  2247,  3448,   515, 10727, 29879,  1358, 29892, 17430,  5310,
+           317, 18939,   313, 29931,  8105,   335,   294, 29899, 29907,   812,
+           898,   744, 29897,  3512,   263,  4922,  1023,   363,  1023,   297,
+           278,  6371,   310,  8046,   373, 27822, 29892,  4444,   701,   670,
+           269,  2158,  7970,   322,  7618,  5921,   304,   278,  7408,  1023,
+          5401,   297,  7510, 17960, 29889,   317, 18939,  2355,  1283,   278,
+          4565,   310,   278,  4639,   327,   265,   411,  1048, 29871, 29896,
+         29945, 29900, 27881,   304,   748, 29892,   322,  4934,  1283, 12612,
+         10727, 29879,  1358,   313, 29954,   279,  1195, 29899,  4297,   945,
+          6191, 29897,   304,  2125,   278,  5401, 29889, 10727, 29879,  1358,
+           471,  1473, 29892,   411,   951,  1141, 17430,   313, 24599, 23894,
+         29897,  4654, 29889,    13,  1576, 29871, 29896, 29896, 29955, 29889,
+         29896, 29899, 26763,  7408,   515,  3087,  8970,   304,  7510, 17960,
+           471, 17524,   491,   385,  4688,  2867, 21694, 29892,   541,   278,
+          2718,   339,   335,   294, 29899, 29907,   812,   898,   744,  3815,
+           310,   317, 18939,  3796,  2898,   304,  6963,   372, 18942,   322,
+           731,   701,   278, 22250,   557,   713,   363,   670,  1473, 18942,
+          7408,  5401, 29889,    13, 29909,  3023, 29899,  1171,  2867, 21694,
+          2355,  3448,  4688,   297,   278,  7408]], device='cuda:0')
+<s> Current Articles | Archives | RSS Feeds | Search Monday, May 14, 2012 Tour of California: Peter Sagan cruises to stage two win in Santa Cruz by Kyle Moore at 8:53 PM EST
+
+Categories: Pro Cycling, Race Reports and Results, Tour of California Young Slovak perfect right hand bend and rides away from Haussler, Howard Peter Sagan (Liquigas-Cannondale) went a perfect two for two in the Tour of California on Monday, setting up his sprint perfectly and cruising to the stage two win in Santa Cruz. Sagan got off the front of the peloton with about 150 meters to go, and held off Heinrich Haussler (Garmin-Barracuda) to take the win. Haussler was second, with Leigh Howard (GreenEdge) third.
+The 117.1-mile stage from San Francisco to Santa Cruz was animated by an early breakaway, but the Liquigas-Cannondale team of Sagan worked hard to bring it consecutive and set up the Slovakian for his second consecutive stage win.
+A four-man breakaway got away early in the stage
+tensor([[    1,  2860,  5929, 12818,   304,   278,   970,   363,  1371, 29892,
+           478, 29711, 18923,   505,  8472, 15659,   263,  8939,   342,  6392,
+          1058,   471,  7124,   491,   263,  1559,   322, 17654, 10676, 10899,
+         14886,   373,   498,  1295,  3250,  7250, 29889,    13,    13,  7504,
+          3278,   304,   478, 25014, 29892,   925,  1156, 29871, 29955, 29901,
+         29941, 29900,   263, 29889, 29885, 29889,   373,   498,  1295,  3250,
+         29892,   385, 27008,   368,   767,   471, 15469,   491,   263, 19716,
+          2978,   278, 16572,  5323,   262,  5073,   472,   317,  2029,   273,
+           322,  6932, 29871, 29906, 29929,   386, 18874, 29889,    13,    13,
+          3868,   471,  4586,   304, 13457, 29892,   541,   278,   767,   471,
+           451, 19436, 29769, 29892,  8236,   278,   478, 25014,   304,  6159,
+           714,   304,   278,   970,   297,   278, 26926,   310,  1180,  1218,
+           670,  3942, 29889,    13,    13,   797,   263,  3229]],
+       device='cuda:0')
+<s> After appealing to the public for help, Vancouver Police have successfully identified a pedestrian who was hit by a car and suffered serious injuries on Thursday morning.
+
+According to VPD, just after 7:30 a.m. on Thursday, an elderly man was struck by a vehicle near the SkyTrain station at Slocan and East 29th Avenue.
+
+He was taken to hospital, but the man was not carrying identification, leading the VPD to reach out to the public in the hopes of locating his family.
+
+In a statement
+tensor([[    1,  2860,  5929, 12818,   304,   278,   970,   363,  1371, 29892,
+           478, 29711, 18923,   505,  8472, 15659,   263,  8939,   342,  6392,
+          1058,   471,  7124,   491,   263,  1559,   322, 17654, 10676, 10899,
+         14886,   373,   498,  1295,  3250,  7250, 29889,    13,    13,  7504,
+          3278,   304,   478, 25014, 29892,   925,  1156, 29871, 29955, 29901,
+         29941, 29900,   263, 29889, 29885, 29889,   373,   498,  1295,  3250,
+         29892,   385, 27008,   368,   767,   471, 15469,   491,   263, 19716,
+          2978,   278, 16572,  5323,   262,  5073,   472,   317,  2029,   273,
+           322,  6932, 29871, 29906, 29929,   386, 18874, 29889,    13,    13,
+          3868,   471,  4586,   304, 13457, 29892,   541,   278,   767,   471,
+           451, 19436, 29769, 29892,  8236,   278,   478, 25014,   304,  6159,
+           714,   304,   278,   970,   297,   278, 26926,   310,  1180,  1218,
+           670,  3942, 29889,    13,    13,   797,   263,  3229, 16610,   373,
+         28728,  7250, 29892,   278,   478, 25014,  1497,   393,  3969,   304,
+           278,  5745,   322,   278,   970, 29892,   278,   767,   756,  1286,
+          1063, 15659,   322,   670,  3942,   756,  1063,   451,  2164, 29889,
+            13,    13,  1576,   478, 25014,  6452,   287,   278,  5745,   322,
+           278,   970,   363,  1009,  1371, 29889,     2]], device='cuda:0')
+<s> After appealing to the public for help, Vancouver Police have successfully identified a pedestrian who was hit by a car and suffered serious injuries on Thursday morning.
+
+According to VPD, just after 7:30 a.m. on Thursday, an elderly man was struck by a vehicle near the SkyTrain station at Slocan and East 29th Avenue.
+
+He was taken to hospital, but the man was not carrying identification, leading the VPD to reach out to the public in the hopes of locating his family.
+
+In a statement issued on Friday morning, the VPD said that thanks to the media and the public, the man has now been identified and his family has been notified.
+
+The VPD thanked the media and the public for their help.</s>
+total time :370.98700s, latency :0.75404s, decoding step: 492, large model step: 55, 8.945454545454545
+[2024-02-26 09:47:27,498] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-CNN-7b-70b-greedy-2.pt', start=0, end=5, T=0.6, P=1.0, DP=0.99, D=1, B=10, seed=17, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+tensor([[    1,   313, 29907, 10262, 29897,  1349,   968,   526,  8866,  1319,
+          3064,   373,   278,  9939, 14378,   297,   278,  3186, 29889,   450,
+          2906,   579,  1218,  8437,   339,  1296,   393,  7124, 22806,   284,
+           373, 24211,   731,  1283,   263,   791,   273,  6609,   393,  2175,
+          2919,  3694,   310, 10784,  2596,  7123, 29892,  4567, 29892, 28606,
+           470,  1020,  2986,   373,  8040, 18274,   342, 29889,  1126,  1156,
+           845,  1698, 29879, 29892,  3704,   263,  4549,   697, 16340, 29892,
+           526,  3133,   292,   304,  3638, 15007,   322, 23150,   266,   870,
+          3241,  1623,   278, 19223,   680, 29892,   752,   506,  1218, 26429,
+         14231, 29889,   376,  4806,   892, 16246,  1244,   297,  2967,  4242,
+         29892, 11223,   278,  6434,   471,  2805,  2253,  1699,  1497, 10784,
+           495,  1704,  3510,  9293,  1330, 29889,   376,  2855,   769, 11584,
+         29892,   591,  7091,   278,  1156,   845,  1698,  1699]],
+       device='cuda:0')
+tensor([[    1,   313, 29907, 10262, 29897,  1349,   968,   526,  8866,  1319,
+          3064,   373,   278,  9939, 14378,   297,   278,  3186, 29889,   450,
+          2906,   579,  1218,  8437,   339,  1296,   393,  7124, 22806,   284,
+           373, 24211,   731,  1283,   263,   791,   273,  6609,   393,  2175,
+          2919,  3694,   310, 10784,  2596,  7123, 29892,  4567, 29892, 28606,
+           470,  1020,  2986,   373,  8040, 18274,   342, 29889,  1126,  1156,
+           845,  1698, 29879, 29892,  3704,   263,  4549,   697, 16340, 29892,
+           526,  3133,   292,   304,  3638, 15007,   322, 23150,   266,   870,
+          3241,  1623,   278, 19223,   680, 29892,   752,   506,  1218, 26429,
+         14231, 29889,   376,  4806,   892, 16246,  1244,   297,  2967,  4242,
+         29892, 11223,   278,  6434,   471,  2805,  2253,  1699,  1497, 10784,
+           495,  1704,  3510,  9293,  1330, 29889,   376,  2855,   769, 11584,
+         29892,   591,  7091,   278,  1156,   845,  1698,  1699,   540,  5429,
+         29696, 29915, 29879,   376,  4373,  8373,  1213,   376,  4806,  1033,
+          1074,   278,   263,   791, 20372,  6421,  1623,   278, 14378, 29889,
+           739,   471, 12176, 29889,   739,   471, 20364, 29889,   739,   471,
+           763,   263,  4802,  9570,   310, 15007, 29892,   322,   372,   471,
+          6421,  1623,   278, 14378, 29889,   376,  4806,  1033,  1074,   372,
+          6421,  1623, 29892,   322,   591,  1033,  1074,   372,  7124,   278,
+          2967,  4242, 29889,  1126,   591,  1033,  1074,   278,   260,  1237,
+          1641, 13031, 29876,  3448, 29892,   322,   591,  1033,  1074,   278,
+          2305,  2734,   363,  1009, 12080,  1213,    13,  1576,  4892,   304,
+           645,   515,   278,  8437,   339,  1296,   756,  5161,   264,   304,
+           901,  1135, 29871, 29906, 29892, 29946, 29900, 29900, 29892,   411,
+           901,  1135, 29871, 29945, 29892, 29929, 29900, 29900, 28606, 29892,
+          5034,   304, 22806,   284, 29915, 29879, 20886]], device='cuda:0')
+tensor([[    1,  7660,   313, 29907, 10262, 29897,  2744,  1283, 29899, 29881,
+           329, 29891,  4509,   310,   278,   853,  5560,   287,  7946,   310,
+         10213,  6692,   471, 24383, 28728,   297,  7660,   322, 20139,   411,
+           937, 29899, 12163,   929, 16388, 26072, 29880,   653, 29892,   263,
+          7995,  2592, 29892,   322,   697,  3984,   311, 12676,   272,  2302,
+           363, 22104,   310,  2875, 29892,   278,   360, 29889, 29907, 29889,
+         28788, 18923, 10317,  8967, 29889, 11498, 23874,  5080, 29892, 29871,
+         29906, 29929, 29892,   471, 24383,   472,   263,  6114, 29915, 29879,
+         25488,   297,   317,   449, 15879,  7660, 29892,  5034,   304, 10701,
+          4944,   491,   278, 10974, 14311, 29889,   940,   756,  1063,  7180,
+           373, 19185,  5967,   322,   670,  6993,  2821,   749,   756,  1063,
+          8872,  2760, 29892,   278, 10213,  6692,  1497, 29889, 23874,  5080,
+           338,  9859,   304,   278, 19358,  4750,  1080, 25889]],
+       device='cuda:0')
+tensor([[    1,  7660,   313, 29907, 10262, 29897,  2744,  1283, 29899, 29881,
+           329, 29891,  4509,   310,   278,   853,  5560,   287,  7946,   310,
+         10213,  6692,   471, 24383, 28728,   297,  7660,   322, 20139,   411,
+           937, 29899, 12163,   929, 16388, 26072, 29880,   653, 29892,   263,
+          7995,  2592, 29892,   322,   697,  3984,   311, 12676,   272,  2302,
+           363, 22104,   310,  2875, 29892,   278,   360, 29889, 29907, 29889,
+         28788, 18923, 10317,  8967, 29889, 11498, 23874,  5080, 29892, 29871,
+         29906, 29929, 29892,   471, 24383,   472,   263,  6114, 29915, 29879,
+         25488,   297,   317,   449, 15879,  7660, 29892,  5034,   304, 10701,
+          4944,   491,   278, 10974, 14311, 29889,   940,   756,  1063,  7180,
+           373, 19185,  5967,   322,   670,  6993,  2821,   749,   756,  1063,
+          8872,  2760, 29892,   278, 10213,  6692,  1497, 29889, 23874,  5080,
+           338,  9859,   304,   278, 19358,  4750,  1080, 25889,   310,   278,
+         10213,  6692, 29892,   607,  8128, 13047,   363,  9117, 13487,  2454,
+          3052,  1080,   297,   278,  3303,  3900, 29889,   450, 10213,  6692,
+          1497,   372,   338,  9543,   310,   278, 22564,   322,   338,  1985,
+           411,   278, 28788, 18923, 10317, 29889, 23874,  5080,   471, 24383,
+          1156,   278,  6114,  2000, 10974,   304,  3461,   393,   263,   767,
+           471,  1811,   304,  2867,   964,   902,  3271, 29892,  5034,   304,
+           278, 10974,  3461, 29889,   450,  6114,  5429, 10974,   393,  1183,
+           750,  1063,   297,   263,  9443,   411, 23874,  5080,   363,  1048,
+           263,  1629,   322,   393,   540,   750,  1063,  4023,   465,   292,
+           902,  1951,  1183,  9698,   278,  9443, 29889,   450,  6114,  1497,
+         23874,  5080,   750,  1063,  9348,   902,  1426,  7191,   322, 24609,
+         29892,   322,   393,   540,   750,  1063,  5432,   902, 28424, 29889,
+          2296,  1497,  1183,   750,  4433,  1075,   304,  5040,  6958,   292,
+           902, 29892,   541,   540,  7572]], device='cuda:0')
+tensor([[    1,   313, 29907, 10262, 29897,  7083,  1111, 14985,   601,   338,
+           599,   297, 29889, 29871,   450, 21178,  6940,  1061,   515, 13813,
+           756,  9326,   393,   540,   338, 25738,   278, 21178,  6673,   616,
+          2245,  3381, 29892,  2734,   373,   385,  5994,  4695,  2643,   393,
+           540,  7232,   397,   583,   278, 11640,   310,   278,  3082, 16814,
+         29889,  2973,   670, 12397,  1319,  5864,   322,  3600,  8357,   293,
+         16778, 29892,   372, 29915, 29879, 25782,   292,   304,  1074, 14985,
+           601,   408,   278,   716, 10416,   393,   278,   402,  4590,  4225,
+           297,  1797,   304,   752,  2650,  2750,  9143,   653,  2233, 16929,
+           297, 29871, 29906, 29900, 29896, 29953, 29889, 29871, 15175, 14985,
+           601,   756,  1063,   670,  1914, 17322, 11103,   373,   825,  1033,
+           505,  1063,   670,  1023, 12608,  5626, 29901,  5198, 16783, 11736,
+           322, 23653,  5302, 29889, 29871,   940,  8640,  2217]],
+       device='cuda:0')
+tensor([[    1,   313, 29907, 10262, 29897,  7083,  1111, 14985,   601,   338,
+           599,   297, 29889, 29871,   450, 21178,  6940,  1061,   515, 13813,
+           756,  9326,   393,   540,   338, 25738,   278, 21178,  6673,   616,
+          2245,  3381, 29892,  2734,   373,   385,  5994,  4695,  2643,   393,
+           540,  7232,   397,   583,   278, 11640,   310,   278,  3082, 16814,
+         29889,  2973,   670, 12397,  1319,  5864,   322,  3600,  8357,   293,
+         16778, 29892,   372, 29915, 29879, 25782,   292,   304,  1074, 14985,
+           601,   408,   278,   716, 10416,   393,   278,   402,  4590,  4225,
+           297,  1797,   304,   752,  2650,  2750,  9143,   653,  2233, 16929,
+           297, 29871, 29906, 29900, 29896, 29953, 29889, 29871, 15175, 14985,
+           601,   756,  1063,   670,  1914, 17322, 11103,   373,   825,  1033,
+           505,  1063,   670,  1023, 12608,  5626, 29901,  5198, 16783, 11736,
+           322, 23653,  5302, 29889, 29871,   940,  8640,  2217, 25530,   363,
+           278, 15678,  7053,  1789,  3546,   272,   403, 29892,   322,   670,
+           285,  3466, 29899, 29888,   417,  3262,   373,  5198, 16783, 11736,
+           756,   394,   819,   630,  1784,   310,   670,  4642,  1462,   272,
+          2153, 29889, 29871, 14985,   601, 29915, 29879,  2407,   373, 23653,
+           338,  1584,   901, 12111, 21435, 29889, 29871,   940,   756,  1063,
+           263,  9523,  3322,   822,  1581,   310,   278, 15588, 29892,   322,
+           756, 15869,  7178,  4250,  3304, 29915, 29879, 14231,   304,  4226,
+           675,  5302,   411,   278, 11359, 29889, 29871,   910,   338,   263,
+          2602,   393,   338,   451,   871,   714,   310,  4331,   411,   278,
+         13638,   310, 23035, 29892,   541,   884,   411,   278, 13638,   310,
+         28618,   273, 29899,  9816, 16708, 29889, 29871, 14985,   601, 29915,
+         29879,   380,   749,   373, 23653,   338,   451,   871,  2743, 29892,
+           541,   372,   338,   884,  2832,  1711,  5625,  6751]],
+       device='cuda:0')
+tensor([[    1,   313, 29907, 10262, 29897, 23002,   713,  7178, 27880, 12065,
+           262,   528,   582,  1505,   287,  1283, 10324,  5155,  1048,   278,
+         10879,   310, 10504,  9753,  1953,   373,   670,  5233,  2645,   263,
+          5233,   635, 12672, 17568,   660, 29987, 29909,  4867, 29889,   376,
+         22509,  1953,   526,  9753,  1953,  1699,   540,  1497, 29889,   376,
+          2887,  2215,   408,  9753,  1953,   526, 15041, 13035,   313, 19562,
+         29915,   276, 29897,  1048,   278,   817,   304,  1040,  6038,  1749,
+          5849,  1699,   451,   925,  1048, 23961,   322, 29682, 29874, 29889,
+         10504,  9753,  1953,   892,  8762,  1156, 25820,   385, 13996,   287,
+         29682, 29874,   322,   410, 29899, 23002,   713,  2903,   271,  2879,
+          8957,   839, 29417,   713,  5874,  8249,   297,   278,  5233, 29915,
+         29879,  9755, 29889, 12065,   262, 25383,   278,  9753,  1953,   723,
+           451,  1095,  4720, 29889,  1551,   278, 14253,  6932]],
+       device='cuda:0')
+tensor([[    1,   313, 29907, 10262, 29897, 23002,   713,  7178, 27880, 12065,
+           262,   528,   582,  1505,   287,  1283, 10324,  5155,  1048,   278,
+         10879,   310, 10504,  9753,  1953,   373,   670,  5233,  2645,   263,
+          5233,   635, 12672, 17568,   660, 29987, 29909,  4867, 29889,   376,
+         22509,  1953,   526,  9753,  1953,  1699,   540,  1497, 29889,   376,
+          2887,  2215,   408,  9753,  1953,   526, 15041, 13035,   313, 19562,
+         29915,   276, 29897,  1048,   278,   817,   304,  1040,  6038,  1749,
+          5849,  1699,   451,   925,  1048, 23961,   322, 29682, 29874, 29889,
+         10504,  9753,  1953,   892,  8762,  1156, 25820,   385, 13996,   287,
+         29682, 29874,   322,   410, 29899, 23002,   713,  2903,   271,  2879,
+          8957,   839, 29417,   713,  5874,  8249,   297,   278,  5233, 29915,
+         29879,  9755, 29889, 12065,   262, 25383,   278,  9753,  1953,   723,
+           451,  1095,  4720, 29889,  1551,   278, 14253,  6932, 29892, 12065,
+           262,  1497, 12710,   338,  7960,   304,  1302,  3372,   403,   411,
+           278,  3303,  3900,   322,   916, 10916,   304,  8589, 15115,  1608,
+         29889,   376,  4806,   526,  7960,   363,  1316,  1302, 16453,  1699,
+           540,  1497, 29889,   376,  4806,   526,  7960,   304,   664,  4208,
+           411,   278,  3303,  3900,   322,   916, 10916,  1716,   297,   278,
+          5120,   322,  5377,   278,  5120,   297,   278,  8589,  2750, 15115,
+          1608,  1213,   940,  1497, 12710,   338,  7960,   304,  1302,  3372,
+           403,   411,   278,  3303,  3900,   322,   916, 10916,   304,  8589,
+         15115,  1608, 29889,   376,  4806,   526,  7960,   363,  1316,  1302,
+         16453,  1699,   540,  1497, 29889,   376,  4806,   526,  7960,   304,
+           664,  4208,   411,   278,  3303,  3900,   322,   916, 10916,  1716,
+           297,   278,  5120,   322,  5377,   278,  5120,   297,   278,  8589,
+          2750, 15115,  1608,  1213,    13, 23002,   713,  7178, 27880, 12065,
+           262,   528,   582,  1505,   287,  1283, 10324,  5155,  1048,   278,
+         10879]], device='cuda:0')
+tensor([[    1,  6417, 10993,   383,   340,  1358,   338,  2307,  4249,   278,
+          2983,   310,   278,  1900, 14163,  5165, 19492,   414,   310,   599,
+           931, 29892,   411,   871,  5320, 10769, 26654,   901,  1135,   670,
+         29871, 29896, 29953, 29906, 14433, 29889,   450,  4642, 24607, 29892,
+           951,  5779,   322, 19659,  4412,  7124,  1171, 14455,   373,   304,
+           278,  9088,   408,   263, 14433,  2616,   292,  4771,   362,   472,
+           530,  2671,   297, 29871, 29896, 29929, 29929, 29941,   322,   723,
+           748,   373,   304,  5401, 29871, 29906, 29953, 26091,   411,  5408,
+         29889,  1205,   383,   340,  1358,  8496, 29915, 29873,  9241, 22006,
+           385,  8494,  6490,  6257, 18488,   515, 10769,  1058, 15000,  2645,
+           670,  3152,   313,  2541,   697,  3153, 14872, 10076,  3946,   260,
+         19715,   263, 18345,  4038, 14366,   408,   540,  2983,   670,   599,
+         29899,  8508,  3815, 29889, 21947,  1964,  6059, 29923]],
+       device='cuda:0')
+tensor([[    1,  6417, 10993,   383,   340,  1358,   338,  2307,  4249,   278,
+          2983,   310,   278,  1900, 14163,  5165, 19492,   414,   310,   599,
+           931, 29892,   411,   871,  5320, 10769, 26654,   901,  1135,   670,
+         29871, 29896, 29953, 29906, 14433, 29889,   450,  4642, 24607, 29892,
+           951,  5779,   322, 19659,  4412,  7124,  1171, 14455,   373,   304,
+           278,  9088,   408,   263, 14433,  2616,   292,  4771,   362,   472,
+           530,  2671,   297, 29871, 29896, 29929, 29929, 29941,   322,   723,
+           748,   373,   304,  5401, 29871, 29906, 29953, 26091,   411,  5408,
+         29889,  1205,   383,   340,  1358,  8496, 29915, 29873,  9241, 22006,
+           385,  8494,  6490,  6257, 18488,   515, 10769,  1058, 15000,  2645,
+           670,  3152,   313,  2541,   697,  3153, 14872, 10076,  3946,   260,
+         19715,   263, 18345,  4038, 14366,   408,   540,  2983,   670,   599,
+         29899,  8508,  3815, 29889, 21947,  1964,  6059, 29923, 13171, 29901,
+          4699,   922, 13533,   450,   826,  4881,   284, 15983,   471,   263,
+          2107,  7306, 23935,   322,   263,  2107,  2931, 29889,   940,   471,
+           263,  4802, 29892,  4549, 11979,   322,   263,  2107, 10322, 29899,
+          7864,  2496, 29889,   940,   471,   263,  2107,  7306, 23935,   322,
+           263,  2107,  2931, 29889,   940,   471,   263,  4802, 29892,  4549,
+         11979,   322,   263,  2107, 10322, 29899,  7864,  2496, 29889,  5012,
+         29943,  1430,  4741, 29901, 23529,  2448,  4909, 29892, 15293, 20359,
+         29892, 11611, 19693, 29892, 12835,  2330, 16816, 23529,  2448,  4909,
+           471,   263,  2107,   822,  1581,   322,   263,  2107, 11822, 29889,
+           940,   471,   263,  2107,   822,  1581,   322,   263,  2107, 11822,
+         29889, 15293, 20359,   471,   263,  2107,   822,  1581,   322,   263,
+          2107, 11822, 29889,   940,   471,   263,  2107,   822,  1581,   322,
+           263,  2107, 11822, 29889, 11611, 19693]], device='cuda:0')
+total time :455.84313s, latency :0.68342s, decoding step: 667, large model step: 68, 9.808823529411764
+[2024-02-26 09:57:18,197] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='dataset/c4_small.json', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-C4-7b-70b-greedy-2.pt', start=0, end=5, T=0.6, P=1.0, DP=0.99, D=1, B=10, seed=17, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+[2024-02-26 09:59:11,298] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-CNN-7b-70b-greedy-2.pt', start=0, end=5, T=0.6, P=1.0, DP=0.99, D=1, B=10, seed=17, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+tensor([[    1,   313, 29907, 10262, 29897,  1349,   968,   526,  8866,  1319,
+          3064,   373,   278,  9939, 14378,   297,   278,  3186, 29889,   450,
+          2906,   579,  1218,  8437,   339,  1296,   393,  7124, 22806,   284,
+           373, 24211,   731,  1283,   263,   791,   273,  6609,   393,  2175,
+          2919,  3694,   310, 10784,  2596,  7123, 29892,  4567, 29892, 28606,
+           470,  1020,  2986,   373,  8040, 18274,   342, 29889,  1126,  1156,
+           845,  1698, 29879, 29892,  3704,   263,  4549,   697, 16340, 29892,
+           526,  3133,   292,   304,  3638, 15007,   322, 23150,   266,   870,
+          3241,  1623,   278, 19223,   680, 29892,   752,   506,  1218, 26429,
+         14231, 29889,   376,  4806,   892, 16246,  1244,   297,  2967,  4242,
+         29892, 11223,   278,  6434,   471,  2805,  2253,  1699,  1497, 10784,
+           495,  1704,  3510,  9293,  1330, 29889,   376,  2855,   769, 11584,
+         29892,   591,  7091,   278,  1156,   845,  1698,  1699]],
+       device='cuda:0')
+<s> (CNN)These are fearful times on the highest mountain in the world. The devastating earthquake that hit Nepal on Saturday set off avalanches that left large numbers of climbers dead, missing, injured or trapped on Mount Everest. And aftershocks, including a strong one Sunday, are continuing to send snow and rocks thundering down the mountainside, complicating rescue efforts. "We were sitting here in base camp, feeling the situation was getting better," said climber Carsten Pederson. "And then suddenly, we felt the aftershock,"
+tensor([[    1,   313, 29907, 10262, 29897,  1349,   968,   526,  8866,  1319,
+          3064,   373,   278,  9939, 14378,   297,   278,  3186, 29889,   450,
+          2906,   579,  1218,  8437,   339,  1296,   393,  7124, 22806,   284,
+           373, 24211,   731,  1283,   263,   791,   273,  6609,   393,  2175,
+          2919,  3694,   310, 10784,  2596,  7123, 29892,  4567, 29892, 28606,
+           470,  1020,  2986,   373,  8040, 18274,   342, 29889,  1126,  1156,
+           845,  1698, 29879, 29892,  3704,   263,  4549,   697, 16340, 29892,
+           526,  3133,   292,   304,  3638, 15007,   322, 23150,   266,   870,
+          3241,  1623,   278, 19223,   680, 29892,   752,   506,  1218, 26429,
+         14231, 29889,   376,  4806,   892, 16246,  1244,   297,  2967,  4242,
+         29892, 11223,   278,  6434,   471,  2805,  2253,  1699,  1497, 10784,
+           495,  1704,  3510,  9293,  1330, 29889,   376,  2855,   769, 11584,
+         29892,   591,  7091,   278,  1156,   845,  1698,  1699,   540,  5429,
+         29696, 29915, 29879,   376,  4373,  8373,  1213,   376,  4806,  1033,
+          1074,   278,   263,   791, 20372,  6421,  1623,   278, 14378, 29889,
+           739,   471, 12176, 29889,   739,   471, 20364, 29889,   739,   471,
+           763,   263,  4802,  9570,   310, 15007, 29892,   322,   372,   471,
+          6421,  1623,   278, 14378, 29889,   376,  4806,  1033,  1074,   372,
+          6421,  1623, 29892,   322,   591,  1033,  1074,   372,  7124,   278,
+          2967,  4242, 29889,  1126,   591,  1033,  1074,   278,   260,  1237,
+          1641, 13031, 29876,  3448, 29892,   322,   591,  1033,  1074,   278,
+          2305,  2734,   363,  1009, 12080,  1213,    13,  1576,  4892,   304,
+           645,   515,   278,  8437,   339,  1296,   756,  5161,   264,   304,
+           901,  1135, 29871, 29906, 29892, 29946, 29900, 29900, 29892,   411,
+           901,  1135, 29871, 29945, 29892, 29929, 29900, 29900, 28606, 29892,
+          5034,   304, 22806,   284, 29915, 29879, 20886]], device='cuda:0')
+<s> (CNN)These are fearful times on the highest mountain in the world. The devastating earthquake that hit Nepal on Saturday set off avalanches that left large numbers of climbers dead, missing, injured or trapped on Mount Everest. And aftershocks, including a strong one Sunday, are continuing to send snow and rocks thundering down the mountainside, complicating rescue efforts. "We were sitting here in base camp, feeling the situation was getting better," said climber Carsten Pederson. "And then suddenly, we felt the aftershock," he told CNN's "New Day." "We could see the avalanche coming down the mountain. It was huge. It was massive. It was like a big cloud of snow, and it was coming down the mountain. "We could see it coming down, and we could see it hit the base camp. And we could see the tents being blown away, and we could see the people running for their lives."
+The death toll from the earthquake has risen to more than 2,400, with more than 5,900 injured, according to Nepal's Ministry
+tensor([[    1,  7660,   313, 29907, 10262, 29897,  2744,  1283, 29899, 29881,
+           329, 29891,  4509,   310,   278,   853,  5560,   287,  7946,   310,
+         10213,  6692,   471, 24383, 28728,   297,  7660,   322, 20139,   411,
+           937, 29899, 12163,   929, 16388, 26072, 29880,   653, 29892,   263,
+          7995,  2592, 29892,   322,   697,  3984,   311, 12676,   272,  2302,
+           363, 22104,   310,  2875, 29892,   278,   360, 29889, 29907, 29889,
+         28788, 18923, 10317,  8967, 29889, 11498, 23874,  5080, 29892, 29871,
+         29906, 29929, 29892,   471, 24383,   472,   263,  6114, 29915, 29879,
+         25488,   297,   317,   449, 15879,  7660, 29892,  5034,   304, 10701,
+          4944,   491,   278, 10974, 14311, 29889,   940,   756,  1063,  7180,
+           373, 19185,  5967,   322,   670,  6993,  2821,   749,   756,  1063,
+          8872,  2760, 29892,   278, 10213,  6692,  1497, 29889, 23874,  5080,
+           338,  9859,   304,   278, 19358,  4750,  1080, 25889]],
+       device='cuda:0')
+<s> Washington (CNN)An off-duty member of the Uniformed Division of Secret Service was arrested Friday in Washington and charged with first-degree attempted burglary, a felony, and one misdemeanor count for destruction of property, the D.C. Metropolitan Police Department reported. Arthur Baldwin, 29, was arrested at a woman's residence in Southeast Washington, according to documents provided by the police department. He has been placed on administrative leave and his security clearance has been suspended, the Secret Service said. Baldwin is assigned to the Foreign Missions Branch
+tensor([[    1,  7660,   313, 29907, 10262, 29897,  2744,  1283, 29899, 29881,
+           329, 29891,  4509,   310,   278,   853,  5560,   287,  7946,   310,
+         10213,  6692,   471, 24383, 28728,   297,  7660,   322, 20139,   411,
+           937, 29899, 12163,   929, 16388, 26072, 29880,   653, 29892,   263,
+          7995,  2592, 29892,   322,   697,  3984,   311, 12676,   272,  2302,
+           363, 22104,   310,  2875, 29892,   278,   360, 29889, 29907, 29889,
+         28788, 18923, 10317,  8967, 29889, 11498, 23874,  5080, 29892, 29871,
+         29906, 29929, 29892,   471, 24383,   472,   263,  6114, 29915, 29879,
+         25488,   297,   317,   449, 15879,  7660, 29892,  5034,   304, 10701,
+          4944,   491,   278, 10974, 14311, 29889,   940,   756,  1063,  7180,
+           373, 19185,  5967,   322,   670,  6993,  2821,   749,   756,  1063,
+          8872,  2760, 29892,   278, 10213,  6692,  1497, 29889, 23874,  5080,
+           338,  9859,   304,   278, 19358,  4750,  1080, 25889,   310,   278,
+         10213,  6692, 29892,   607,  8128, 13047,   363,  9117, 13487,  2454,
+          3052,  1080,   297,   278,  3303,  3900, 29889,   450, 10213,  6692,
+          1497,   372,   338,  9543,   310,   278, 22564,   322,   338,  1985,
+           411,   278, 28788, 18923, 10317, 29889, 23874,  5080,   471, 24383,
+          1156,   278,  6114,  2000, 10974,   304,  3461,   393,   263,   767,
+           471,  1811,   304,  2867,   964,   902,  3271, 29892,  5034,   304,
+           278, 10974,  3461, 29889,   450,  6114,  5429, 10974,   393,  1183,
+           750,  1063,   297,   263,  9443,   411, 23874,  5080,   363,  1048,
+           263,  1629,   322,   393,   540,   750,  1063,  4023,   465,   292,
+           902,  1951,  1183,  9698,   278,  9443, 29889,   450,  6114,  1497,
+         23874,  5080,   750,  1063,  9348,   902,  1426,  7191,   322, 24609,
+         29892,   322,   393,   540,   750,  1063,  5432,   902, 28424, 29889,
+          2296,  1497,  1183,   750,  4433,  1075,   304,  5040,  6958,   292,
+           902, 29892,   541,   540,  7572]], device='cuda:0')
+<s> Washington (CNN)An off-duty member of the Uniformed Division of Secret Service was arrested Friday in Washington and charged with first-degree attempted burglary, a felony, and one misdemeanor count for destruction of property, the D.C. Metropolitan Police Department reported. Arthur Baldwin, 29, was arrested at a woman's residence in Southeast Washington, according to documents provided by the police department. He has been placed on administrative leave and his security clearance has been suspended, the Secret Service said. Baldwin is assigned to the Foreign Missions Branch of the Secret Service, which provides protection for foreign diplomatic missions in the United States. The Secret Service said it is aware of the arrest and is working with the Metropolitan Police Department. Baldwin was arrested after the woman called police to report that a man was trying to break into her home, according to the police report. The woman told police that she had been in a relationship with Baldwin for about a year and that he had been harassing her since she ended the relationship. The woman said Baldwin had been sending her text messages and emails, and that he had been calling her repeatedly. She said she had asked him to stop contacting her, but he continued
+tensor([[    1,   313, 29907, 10262, 29897,  7083,  1111, 14985,   601,   338,
+           599,   297, 29889, 29871,   450, 21178,  6940,  1061,   515, 13813,
+           756,  9326,   393,   540,   338, 25738,   278, 21178,  6673,   616,
+          2245,  3381, 29892,  2734,   373,   385,  5994,  4695,  2643,   393,
+           540,  7232,   397,   583,   278, 11640,   310,   278,  3082, 16814,
+         29889,  2973,   670, 12397,  1319,  5864,   322,  3600,  8357,   293,
+         16778, 29892,   372, 29915, 29879, 25782,   292,   304,  1074, 14985,
+           601,   408,   278,   716, 10416,   393,   278,   402,  4590,  4225,
+           297,  1797,   304,   752,  2650,  2750,  9143,   653,  2233, 16929,
+           297, 29871, 29906, 29900, 29896, 29953, 29889, 29871, 15175, 14985,
+           601,   756,  1063,   670,  1914, 17322, 11103,   373,   825,  1033,
+           505,  1063,   670,  1023, 12608,  5626, 29901,  5198, 16783, 11736,
+           322, 23653,  5302, 29889, 29871,   940,  8640,  2217]],
+       device='cuda:0')
+<s> (CNN)Marco Rubio is all in.  The Republican senator from Florida has announced that he is seeking the Republican presidential nomination, running on an optimistic message that he embodies the promise of the American Dream. With his youthful energy and Hispanic roots, it's tempting to see Rubio as the new blood that the GOP needs in order to compete against Hillary Clinton in 2016.  Yet Rubio has been his own worst enemy on what could have been his two signature issues: immigration reform and Cuba relations.  He holds little
+tensor([[    1,   313, 29907, 10262, 29897,  7083,  1111, 14985,   601,   338,
+           599,   297, 29889, 29871,   450, 21178,  6940,  1061,   515, 13813,
+           756,  9326,   393,   540,   338, 25738,   278, 21178,  6673,   616,
+          2245,  3381, 29892,  2734,   373,   385,  5994,  4695,  2643,   393,
+           540,  7232,   397,   583,   278, 11640,   310,   278,  3082, 16814,
+         29889,  2973,   670, 12397,  1319,  5864,   322,  3600,  8357,   293,
+         16778, 29892,   372, 29915, 29879, 25782,   292,   304,  1074, 14985,
+           601,   408,   278,   716, 10416,   393,   278,   402,  4590,  4225,
+           297,  1797,   304,   752,  2650,  2750,  9143,   653,  2233, 16929,
+           297, 29871, 29906, 29900, 29896, 29953, 29889, 29871, 15175, 14985,
+           601,   756,  1063,   670,  1914, 17322, 11103,   373,   825,  1033,
+           505,  1063,   670,  1023, 12608,  5626, 29901,  5198, 16783, 11736,
+           322, 23653,  5302, 29889, 29871,   940,  8640,  2217, 25530,   363,
+           278, 15678,  7053,  1789,  3546,   272,   403, 29892,   322,   670,
+           285,  3466, 29899, 29888,   417,  3262,   373,  5198, 16783, 11736,
+           756,   394,   819,   630,  1784,   310,   670,  4642,  1462,   272,
+          2153, 29889, 29871, 14985,   601, 29915, 29879,  2407,   373, 23653,
+           338,  1584,   901, 12111, 21435, 29889, 29871,   940,   756,  1063,
+           263,  9523,  3322,   822,  1581,   310,   278, 15588, 29892,   322,
+           756, 15869,  7178,  4250,  3304, 29915, 29879, 14231,   304,  4226,
+           675,  5302,   411,   278, 11359, 29889, 29871,   910,   338,   263,
+          2602,   393,   338,   451,   871,   714,   310,  4331,   411,   278,
+         13638,   310, 23035, 29892,   541,   884,   411,   278, 13638,   310,
+         28618,   273, 29899,  9816, 16708, 29889, 29871, 14985,   601, 29915,
+         29879,   380,   749,   373, 23653,   338,   451,   871,  2743, 29892,
+           541,   372,   338,   884,  2832,  1711,  5625,  6751]],
+       device='cuda:0')
+<s> (CNN)Marco Rubio is all in.  The Republican senator from Florida has announced that he is seeking the Republican presidential nomination, running on an optimistic message that he embodies the promise of the American Dream. With his youthful energy and Hispanic roots, it's tempting to see Rubio as the new blood that the GOP needs in order to compete against Hillary Clinton in 2016.  Yet Rubio has been his own worst enemy on what could have been his two signature issues: immigration reform and Cuba relations.  He holds little appeal for the growing Latino electorate, and his flip-flopping on immigration reform has alienated many of his former supporters.  Rubio's record on Cuba is even more troubling.  He has been a staunch defender of the embargo, and has opposed President Obama's efforts to normalize relations with the island.  This is a position that is not only out of step with the majority of Americans, but also with the majority of Cuban-Americans.  Rubio's stance on Cuba is not only wrong, but it is also politically damaging
+tensor([[    1,   313, 29907, 10262, 29897, 23002,   713,  7178, 27880, 12065,
+           262,   528,   582,  1505,   287,  1283, 10324,  5155,  1048,   278,
+         10879,   310, 10504,  9753,  1953,   373,   670,  5233,  2645,   263,
+          5233,   635, 12672, 17568,   660, 29987, 29909,  4867, 29889,   376,
+         22509,  1953,   526,  9753,  1953,  1699,   540,  1497, 29889,   376,
+          2887,  2215,   408,  9753,  1953,   526, 15041, 13035,   313, 19562,
+         29915,   276, 29897,  1048,   278,   817,   304,  1040,  6038,  1749,
+          5849,  1699,   451,   925,  1048, 23961,   322, 29682, 29874, 29889,
+         10504,  9753,  1953,   892,  8762,  1156, 25820,   385, 13996,   287,
+         29682, 29874,   322,   410, 29899, 23002,   713,  2903,   271,  2879,
+          8957,   839, 29417,   713,  5874,  8249,   297,   278,  5233, 29915,
+         29879,  9755, 29889, 12065,   262, 25383,   278,  9753,  1953,   723,
+           451,  1095,  4720, 29889,  1551,   278, 14253,  6932]],
+       device='cuda:0')
+<s> (CNN)Russian President Vladimir Putin shrugged off repeated questions about the impact of Western sanctions on his nation during a nationally broadcast annual Q&A session. "Sanctions are sanctions," he said. "As far as sanctions are concerned .... (they're) about the need to constrain our development," not just about Ukraine and Crimea. Western sanctions were implemented after Moscow annexed Crimea and pro-Russian separatists battled Ukrainian government forces in the nation's east. Putin predicted the sanctions would not end soon. On the Middle East
+tensor([[    1,   313, 29907, 10262, 29897, 23002,   713,  7178, 27880, 12065,
+           262,   528,   582,  1505,   287,  1283, 10324,  5155,  1048,   278,
+         10879,   310, 10504,  9753,  1953,   373,   670,  5233,  2645,   263,
+          5233,   635, 12672, 17568,   660, 29987, 29909,  4867, 29889,   376,
+         22509,  1953,   526,  9753,  1953,  1699,   540,  1497, 29889,   376,
+          2887,  2215,   408,  9753,  1953,   526, 15041, 13035,   313, 19562,
+         29915,   276, 29897,  1048,   278,   817,   304,  1040,  6038,  1749,
+          5849,  1699,   451,   925,  1048, 23961,   322, 29682, 29874, 29889,
+         10504,  9753,  1953,   892,  8762,  1156, 25820,   385, 13996,   287,
+         29682, 29874,   322,   410, 29899, 23002,   713,  2903,   271,  2879,
+          8957,   839, 29417,   713,  5874,  8249,   297,   278,  5233, 29915,
+         29879,  9755, 29889, 12065,   262, 25383,   278,  9753,  1953,   723,
+           451,  1095,  4720, 29889,  1551,   278, 14253,  6932, 29892, 12065,
+           262,  1497, 12710,   338,  7960,   304,  1302,  3372,   403,   411,
+           278,  3303,  3900,   322,   916, 10916,   304,  8589, 15115,  1608,
+         29889,   376,  4806,   526,  7960,   363,  1316,  1302, 16453,  1699,
+           540,  1497, 29889,   376,  4806,   526,  7960,   304,   664,  4208,
+           411,   278,  3303,  3900,   322,   916, 10916,  1716,   297,   278,
+          5120,   322,  5377,   278,  5120,   297,   278,  8589,  2750, 15115,
+          1608,  1213,   940,  1497, 12710,   338,  7960,   304,  1302,  3372,
+           403,   411,   278,  3303,  3900,   322,   916, 10916,   304,  8589,
+         15115,  1608, 29889,   376,  4806,   526,  7960,   363,  1316,  1302,
+         16453,  1699,   540,  1497, 29889,   376,  4806,   526,  7960,   304,
+           664,  4208,   411,   278,  3303,  3900,   322,   916, 10916,  1716,
+           297,   278,  5120,   322,  5377,   278,  5120,   297,   278,  8589,
+          2750, 15115,  1608,  1213,    13, 23002,   713,  7178, 27880, 12065,
+           262,   528,   582,  1505,   287,  1283, 10324,  5155,  1048,   278,
+         10879]], device='cuda:0')
+<s> (CNN)Russian President Vladimir Putin shrugged off repeated questions about the impact of Western sanctions on his nation during a nationally broadcast annual Q&A session. "Sanctions are sanctions," he said. "As far as sanctions are concerned .... (they're) about the need to constrain our development," not just about Ukraine and Crimea. Western sanctions were implemented after Moscow annexed Crimea and pro-Russian separatists battled Ukrainian government forces in the nation's east. Putin predicted the sanctions would not end soon. On the Middle East, Putin said Russia is ready to cooperate with the United States and other countries to fight terrorism. "We are ready for such cooperation," he said. "We are ready to work together with the United States and other countries both in the region and outside the region in the fight against terrorism." He said Russia is ready to cooperate with the United States and other countries to fight terrorism. "We are ready for such cooperation," he said. "We are ready to work together with the United States and other countries both in the region and outside the region in the fight against terrorism."
+Russian President Vladimir Putin shrugged off repeated questions about the impact
+tensor([[    1,  6417, 10993,   383,   340,  1358,   338,  2307,  4249,   278,
+          2983,   310,   278,  1900, 14163,  5165, 19492,   414,   310,   599,
+           931, 29892,   411,   871,  5320, 10769, 26654,   901,  1135,   670,
+         29871, 29896, 29953, 29906, 14433, 29889,   450,  4642, 24607, 29892,
+           951,  5779,   322, 19659,  4412,  7124,  1171, 14455,   373,   304,
+           278,  9088,   408,   263, 14433,  2616,   292,  4771,   362,   472,
+           530,  2671,   297, 29871, 29896, 29929, 29929, 29941,   322,   723,
+           748,   373,   304,  5401, 29871, 29906, 29953, 26091,   411,  5408,
+         29889,  1205,   383,   340,  1358,  8496, 29915, 29873,  9241, 22006,
+           385,  8494,  6490,  6257, 18488,   515, 10769,  1058, 15000,  2645,
+           670,  3152,   313,  2541,   697,  3153, 14872, 10076,  3946,   260,
+         19715,   263, 18345,  4038, 14366,   408,   540,  2983,   670,   599,
+         29899,  8508,  3815, 29889, 21947,  1964,  6059, 29923]],
+       device='cuda:0')
+<s> Robbie Fowler is already among the names of the best Premier League strikers of all time, with only five players scoring more than his 162 goals. The former Liverpool, Leeds and Manchester City hitman broke on to the scene as a goalscoring sensation at Anfield in 1993 and would go on to win 26 caps with England. But Fowler couldn't resist naming an ultimate starting XI from players who featured during his era (with one particular Dutch striker treading a grey area!) as he names his all-star team. GOALKEE
+tensor([[    1,  6417, 10993,   383,   340,  1358,   338,  2307,  4249,   278,
+          2983,   310,   278,  1900, 14163,  5165, 19492,   414,   310,   599,
+           931, 29892,   411,   871,  5320, 10769, 26654,   901,  1135,   670,
+         29871, 29896, 29953, 29906, 14433, 29889,   450,  4642, 24607, 29892,
+           951,  5779,   322, 19659,  4412,  7124,  1171, 14455,   373,   304,
+           278,  9088,   408,   263, 14433,  2616,   292,  4771,   362,   472,
+           530,  2671,   297, 29871, 29896, 29929, 29929, 29941,   322,   723,
+           748,   373,   304,  5401, 29871, 29906, 29953, 26091,   411,  5408,
+         29889,  1205,   383,   340,  1358,  8496, 29915, 29873,  9241, 22006,
+           385,  8494,  6490,  6257, 18488,   515, 10769,  1058, 15000,  2645,
+           670,  3152,   313,  2541,   697,  3153, 14872, 10076,  3946,   260,
+         19715,   263, 18345,  4038, 14366,   408,   540,  2983,   670,   599,
+         29899,  8508,  3815, 29889, 21947,  1964,  6059, 29923, 13171, 29901,
+          4699,   922, 13533,   450,   826,  4881,   284, 15983,   471,   263,
+          2107,  7306, 23935,   322,   263,  2107,  2931, 29889,   940,   471,
+           263,  4802, 29892,  4549, 11979,   322,   263,  2107, 10322, 29899,
+          7864,  2496, 29889,   940,   471,   263,  2107,  7306, 23935,   322,
+           263,  2107,  2931, 29889,   940,   471,   263,  4802, 29892,  4549,
+         11979,   322,   263,  2107, 10322, 29899,  7864,  2496, 29889,  5012,
+         29943,  1430,  4741, 29901, 23529,  2448,  4909, 29892, 15293, 20359,
+         29892, 11611, 19693, 29892, 12835,  2330, 16816, 23529,  2448,  4909,
+           471,   263,  2107,   822,  1581,   322,   263,  2107, 11822, 29889,
+           940,   471,   263,  2107,   822,  1581,   322,   263,  2107, 11822,
+         29889, 15293, 20359,   471,   263,  2107,   822,  1581,   322,   263,
+          2107, 11822, 29889,   940,   471,   263,  2107,   822,  1581,   322,
+           263,  2107, 11822, 29889, 11611, 19693]], device='cuda:0')
+<s> Robbie Fowler is already among the names of the best Premier League strikers of all time, with only five players scoring more than his 162 goals. The former Liverpool, Leeds and Manchester City hitman broke on to the scene as a goalscoring sensation at Anfield in 1993 and would go on to win 26 caps with England. But Fowler couldn't resist naming an ultimate starting XI from players who featured during his era (with one particular Dutch striker treading a grey area!) as he names his all-star team. GOALKEEPER: David Seaman The Arsenal legend was a great goalkeeper and a great character. He was a big, strong lad and a great shot-stopper. He was a great goalkeeper and a great character. He was a big, strong lad and a great shot-stopper. DEFENCE: Gary Neville, Tony Adams, Rio Ferdinand, Ashley Cole Gary Neville was a great defender and a great leader. He was a great defender and a great leader. Tony Adams was a great defender and a great leader. He was a great defender and a great leader. Rio Ferdinand
+total time :455.57126s, latency :0.68302s, decoding step: 667, large model step: 68, 9.808823529411764
+[2024-02-26 10:09:03,037] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='dataset/c4_small.json', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-C4-7b-70b-greedy-2.pt', start=0, end=5, T=0.6, P=1.0, DP=0.99, D=1, B=10, seed=17, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+tensor([[    1,  2973,   263, 13807,  1106,   393,  1838, 30010, 29873,  2635,
+         29892,   445,   350,   575,  3391,  4891,  2343,  2362,   262,  1601,
+         29877,  6837,   261, 18751,   338,  4922,   363,  3785,   322, 13807,
+         27683, 18901, 29889,  5293,  1601,   711,  2029, 15483,   372, 29497,
+          6837,   267,   596,  7375,   322, 11220,  4094, 11421, 29892,   322,
+          7805,   263,  1835,   701, 19863,   304,  5948,  1712,   470,  4320,
+          1283,   596,  2362,   262, 29559,  5053, 29879, 29889,    13,  4013,
+         13807,  2362,   262, 18751,   338, 13907,   363,   599,  4094, 12959,
+          6757,   313,  1195, 29889, 29871, 29900, 29889, 29896,  2594, 29897,
+          5662,  3864,   263, 13568,  6288,  4180,  1090,   599, 10261,  5855,
+         29889,  5373,  2782,   304,  2317,   278,  1243,   310,   931, 29892,
+           372, 30010, 29879, 12012,  2955,   515,  9167,  1771,   465,   577,
+           372,  2113, 30010, 29873, 21580, 29892, 25985,   295]],
+       device='cuda:0')
+<s> With a traditional look that doesn’t date, this Bensham cross head basin mono mixer tap is perfect for period and traditional bathrooms. Using monobloc technology it efficiently mixes your hot and cold water supply, and includes a pop up waste to easily contain or cast off your basin soap suds.
+This traditional basin tap is suitable for all water pressure systems (min. 0.1 bar) ensuring a fantastic performance under all UK conditions. Built to stand the test of time, it’s manufactured from Virgin Brass so it won’t rust, nickel
+tensor([[    1,  2973,   263, 13807,  1106,   393,  1838, 30010, 29873,  2635,
+         29892,   445,   350,   575,  3391,  4891,  2343,  2362,   262,  1601,
+         29877,  6837,   261, 18751,   338,  4922,   363,  3785,   322, 13807,
+         27683, 18901, 29889,  5293,  1601,   711,  2029, 15483,   372, 29497,
+          6837,   267,   596,  7375,   322, 11220,  4094, 11421, 29892,   322,
+          7805,   263,  1835,   701, 19863,   304,  5948,  1712,   470,  4320,
+          1283,   596,  2362,   262, 29559,  5053, 29879, 29889,    13,  4013,
+         13807,  2362,   262, 18751,   338, 13907,   363,   599,  4094, 12959,
+          6757,   313,  1195, 29889, 29871, 29900, 29889, 29896,  2594, 29897,
+          5662,  3864,   263, 13568,  6288,  4180,  1090,   599, 10261,  5855,
+         29889,  5373,  2782,   304,  2317,   278,  1243,   310,   931, 29892,
+           372, 30010, 29879, 12012,  2955,   515,  9167,  1771,   465,   577,
+           372,  2113, 30010, 29873, 21580, 29892, 25985,   295,   715,   630,
+           304,  5557,  1034,  1883,   291,   322,  7743,   297,   263,  2898,
+           591,  4362, 16735,   715,  1218, 29889,    13,  4013, 18751,   338,
+         13907,   363,   671,   411,   263,  2362,   262,   411,   697, 18751,
+         16188, 29889,     2]], device='cuda:0')
+<s> With a traditional look that doesn’t date, this Bensham cross head basin mono mixer tap is perfect for period and traditional bathrooms. Using monobloc technology it efficiently mixes your hot and cold water supply, and includes a pop up waste to easily contain or cast off your basin soap suds.
+This traditional basin tap is suitable for all water pressure systems (min. 0.1 bar) ensuring a fantastic performance under all UK conditions. Built to stand the test of time, it’s manufactured from Virgin Brass so it won’t rust, nickel plated to prevent corrosion and finished in a hard wearing chrome plating.
+This tap is suitable for use with a basin with one tap hole.</s>
+tensor([[    1,  9208,  8788,   491,  9899,   700, 29900, 29929,  5846, 29871,
+         29906, 29892, 29871, 29906, 29900, 29896, 29947,   472, 29871, 29947,
+         29901, 29945, 29929, 29901, 29946, 29941, 11278,   402, 11490,  1919,
+          8788, 29871, 29896,  3064,   297,  3001, 29889,    13, 29898,  6585,
+           292,   515,   383,   403, 29914,   303,   388,  4646, 29892,   306,
+          1016, 29915, 29873,  1348,   372, 14393,   297,  4696,   393,   366,
+           766,  4561, 29897,  3374,   366, 29991,    13,  8897,  8788,   491,
+          2812,  2638,   681,  5846, 29871, 29906, 29892, 29871, 29906, 29900,
+         29896, 29947,   472, 29871, 29929, 29901, 29941, 29953, 29901, 29941,
+         29896, 11278,   402, 11490,  1919,  8788, 29871, 29896,  3064,   297,
+          3001, 29889,    13, 10773, 23553,   723,   367,  2691, 29892,  3969,
+           297,  6564, 29991,    13, 25271,   366,   577,  1568,   297, 25215,
+           749, 29892,   322,  6975,   263,  7575,  2462, 29991]],
+       device='cuda:0')
+<s> Last edited by Gabdu09 December 2, 2018 at 8:59:43 PM GMT , edited 1 times in total.
+(Opening from Fate/stay night, I don't think it belongs in music that you dislike) Thank you!
+Last edited by Emilious December 2, 2018 at 9:36:31 PM GMT , edited 1 times in total.
+Any difficulties would be fine, thanks in advance!
+Thank you so much in Advance, and Have a nice day!
+tensor([[    1,  9208,  8788,   491,  9899,   700, 29900, 29929,  5846, 29871,
+         29906, 29892, 29871, 29906, 29900, 29896, 29947,   472, 29871, 29947,
+         29901, 29945, 29929, 29901, 29946, 29941, 11278,   402, 11490,  1919,
+          8788, 29871, 29896,  3064,   297,  3001, 29889,    13, 29898,  6585,
+           292,   515,   383,   403, 29914,   303,   388,  4646, 29892,   306,
+          1016, 29915, 29873,  1348,   372, 14393,   297,  4696,   393,   366,
+           766,  4561, 29897,  3374,   366, 29991,    13,  8897,  8788,   491,
+          2812,  2638,   681,  5846, 29871, 29906, 29892, 29871, 29906, 29900,
+         29896, 29947,   472, 29871, 29929, 29901, 29941, 29953, 29901, 29941,
+         29896, 11278,   402, 11490,  1919,  8788, 29871, 29896,  3064,   297,
+          3001, 29889,    13, 10773, 23553,   723,   367,  2691, 29892,  3969,
+           297,  6564, 29991,    13, 25271,   366,   577,  1568,   297, 25215,
+           749, 29892,   322,  6975,   263,  7575,  2462, 29991,    13,  8897,
+          8788,   491,  2812,  2638,   681,  5846, 29871, 29906, 29892, 29871,
+         29906, 29900, 29896, 29947,   472, 29871, 29929, 29901, 29941, 29955,
+         29901, 29900, 29900, 11278,   402, 11490,  1919,  8788, 29871, 29896,
+          3064,   297,  3001, 29889,    13,  8897,  8788,   491,  2812,  2638,
+           681,  5846, 29871, 29906, 29892, 29871, 29906, 29900, 29896, 29947,
+           472, 29871, 29929, 29901, 29941, 29955, 29901, 29896, 29906, 11278,
+           402, 11490,  1919,  8788, 29871, 29896,  3064,   297,  3001, 29889,
+            13,  8897,  8788,   491,  2812,  2638,   681,  5846, 29871, 29906,
+         29892, 29871, 29906, 29900, 29896, 29947,   472, 29871, 29929, 29901,
+         29941, 29955, 29901, 29906, 29946, 11278,   402, 11490,  1919,  8788,
+         29871, 29896,  3064,   297,  3001, 29889,    13,  8897,  8788,   491,
+          2812,  2638,   681,  5846, 29871, 29906, 29892, 29871, 29906, 29900,
+         29896, 29947,   472, 29871, 29929, 29901, 29941, 29955, 29901, 29941,
+         29953, 11278,   402, 11490,  1919,  8788, 29871, 29896,  3064,   297,
+          3001, 29889,    13,  8897,  8788,   491]], device='cuda:0')
+<s> Last edited by Gabdu09 December 2, 2018 at 8:59:43 PM GMT , edited 1 times in total.
+(Opening from Fate/stay night, I don't think it belongs in music that you dislike) Thank you!
+Last edited by Emilious December 2, 2018 at 9:36:31 PM GMT , edited 1 times in total.
+Any difficulties would be fine, thanks in advance!
+Thank you so much in Advance, and Have a nice day!
+Last edited by Emilious December 2, 2018 at 9:37:00 PM GMT , edited 1 times in total.
+Last edited by Emilious December 2, 2018 at 9:37:12 PM GMT , edited 1 times in total.
+Last edited by Emilious December 2, 2018 at 9:37:24 PM GMT , edited 1 times in total.
+Last edited by Emilious December 2, 2018 at 9:37:36 PM GMT , edited 1 times in total.
+Last edited by
+tensor([[    1,  1094, 14717,   528,  3554,   748,  5020,   669, 19509,   338,
+         21643, 29889,   960,   366, 30010,   345,  2355,   697,   297,   596,
+          4038,   748,   322,  1207,  7875,   411,   963, 29892,   896, 30010,
+           276, 19780, 29892,  7134,   519, 19589,   322,  5360,   304,  5193,
+          2734, 29991,    13,  6295, 12528,  1584,   278,  2646,   600,  4812,
+           413,  4841,   864,   263,  8424, 29991,    13, 29909, 26800,   368,
+          4802,  2507,   449, 10423,   278,  3787,   472, 29871, 29953,  3358,
+           322,  8455,   349,  2650,  2355,   304,   664, 22965, 17068,  2343,
+          7345,  6609,   322,  6820, 11994,   373,   920,   304,   671,   963,
+         29889,  1346, 27031,   278,  2826,   304,  2507,   372,   373, 29892,
+          5503,   372,  1449,   304,  2507,   372,  1283,  8643,    13, 14084,
+           263,  2846, 11916,  4312,   769, 29889,    13, 29967,  3470,   294,
+           322,  9127,   528,  1862, 29892,   278,  4922, 10296]],
+       device='cuda:0')
+<s> As sports shops go Up & Running is ace. If you’ve got one in your area go and make friends with them, they’re friendly, knowledgeable folk and love to talk running!
+So cool even the graffiti kids want a piece!
+A surprisingly big turnout filled the store at 6pm and manager Pete got to work distributing headtorches and giving instructions on how to use them. “Push the button to turn it on, push it again to turn it off”.
+Just a few samples needed then.
+Jaffas and gel shots, the perfect combination
+tensor([[    1,  1094, 14717,   528,  3554,   748,  5020,   669, 19509,   338,
+         21643, 29889,   960,   366, 30010,   345,  2355,   697,   297,   596,
+          4038,   748,   322,  1207,  7875,   411,   963, 29892,   896, 30010,
+           276, 19780, 29892,  7134,   519, 19589,   322,  5360,   304,  5193,
+          2734, 29991,    13,  6295, 12528,  1584,   278,  2646,   600,  4812,
+           413,  4841,   864,   263,  8424, 29991,    13, 29909, 26800,   368,
+          4802,  2507,   449, 10423,   278,  3787,   472, 29871, 29953,  3358,
+           322,  8455,   349,  2650,  2355,   304,   664, 22965, 17068,  2343,
+          7345,  6609,   322,  6820, 11994,   373,   920,   304,   671,   963,
+         29889,  1346, 27031,   278,  2826,   304,  2507,   372,   373, 29892,
+          5503,   372,  1449,   304,  2507,   372,  1283,  8643,    13, 14084,
+           263,  2846, 11916,  4312,   769, 29889,    13, 29967,  3470,   294,
+           322,  9127,   528,  1862, 29892,   278,  4922, 10296, 29889,    13,
+          1576,  1065,   471,   263, 29871, 29945, 29895,  2425,  2820,   278,
+          4272,  8442, 29892,  5622,   297,   278,   269,  5861,   310,   278,
+           274, 21471, 29892,   278, 20610,   322,   278,  8580, 29889,   450,
+          5782,   471,  1532, 10902,   411,   330,   677,   380,  7358,   322,
+           278,  2343,  7345,  6609,   892,   263,  2107,  1371, 29889,    13,
+          1576,  1065,   471,   263,  2107,  2551,   322, 14332,   750,   263,
+          2107,   931, 29889,    13,  1576,  1065,   471,   263,  2107,  2551,
+           322, 14332,   750,   263,  2107,   931, 29889,   450,   871,  1623,
+          2975,   471,   393,   278, 18296,   471,  5764,   746,   591,  2355,
+          1250,   577,   591,  8496, 30010, 29873, 15649,  3099, 29889,    13,
+          1576,   871,  1623,  2975,   471,   393,   278, 18296,   471,  5764,
+           746,   591,  2355,  1250,   577,   591,  8496, 30010, 29873, 15649,
+          3099, 29889,    13,  1576,   871,  1623,  2975,   471,   393,   278,
+         18296,   471,  5764]], device='cuda:0')
+<s> As sports shops go Up & Running is ace. If you’ve got one in your area go and make friends with them, they’re friendly, knowledgeable folk and love to talk running!
+So cool even the graffiti kids want a piece!
+A surprisingly big turnout filled the store at 6pm and manager Pete got to work distributing headtorches and giving instructions on how to use them. “Push the button to turn it on, push it again to turn it off”.
+Just a few samples needed then.
+Jaffas and gel shots, the perfect combination.
+The run was a 5k loop around the city centre, taking in the sights of the cathedral, the castle and the river. The route was well marked with glow sticks and the headtorches were a great help.
+The run was a great success and everyone had a great time.
+The run was a great success and everyone had a great time. The only downside was that the shop was closed when we got back so we couldn’t buy anything.
+The only downside was that the shop was closed when we got back so we couldn’t buy anything.
+The only downside was that the shop was closed
+tensor([[    1,   450, 27150,  3074,  5057,  4523, 15521, 14311, 22981,  1346,
+          1576, 11143,  4702,   655,   333,  3995,   278,  9636, 29991,    13,
+          4013,  3942, 29899, 18326,   368,  1510, 23522,   596, 25448, 17944,
+          4890,   304,  2834,   373,   278, 19722,  8612,  2105,  1974,  7408,
+         29889,    13,  1252,   546,  5597,   278,  5192, 29899, 29893,  2817,
+           292,  5828,   310, 22063,   319, 12836, 29892,  4088,   323,   768,
+           265, 30010, 29879,  4123,   342,  8750, 29892,  1058, 28688,   304,
+         12359,   434,   278,  5199, 10787, 14713,   297,   278,  3186,  2038,
+         29889,  2296,   289,  1191,  2708,   411,   278, 16126,  7205,   281,
+          2335, 29892, 18373,  2497, 29892,   902,   263,  1657, 29892,   304,
+         11302,   902, 12464,   363, 21152, 29889,  1205, 29892,   278,   289,
+          1191,   475,   338,   451,   825,   372,  2444, 29892,   322,   319,
+         12836,  4225,   278,  1371,   310,   902,  2927,  1319]],
+       device='cuda:0')
+<s> The Pittsburg High School Theatre department presents “The Little Mermaid,” the musical!
+This family-friendly show brings your favorite Disney characters to life on the Memorial Auditorium stage.
+Experience the heart-warming story of Princess Ariel, King Triton’s youngest daughter, who wishes to pursue the human Prince Eric in the world above. She bargains with the evil sea witch, Ursula, her aunt, to trade her tail for legs. But, the bargain is not what it seems, and Ariel needs the help of her colorful
+tensor([[    1,   450, 27150,  3074,  5057,  4523, 15521, 14311, 22981,  1346,
+          1576, 11143,  4702,   655,   333,  3995,   278,  9636, 29991,    13,
+          4013,  3942, 29899, 18326,   368,  1510, 23522,   596, 25448, 17944,
+          4890,   304,  2834,   373,   278, 19722,  8612,  2105,  1974,  7408,
+         29889,    13,  1252,   546,  5597,   278,  5192, 29899, 29893,  2817,
+           292,  5828,   310, 22063,   319, 12836, 29892,  4088,   323,   768,
+           265, 30010, 29879,  4123,   342,  8750, 29892,  1058, 28688,   304,
+         12359,   434,   278,  5199, 10787, 14713,   297,   278,  3186,  2038,
+         29889,  2296,   289,  1191,  2708,   411,   278, 16126,  7205,   281,
+          2335, 29892, 18373,  2497, 29892,   902,   263,  1657, 29892,   304,
+         11302,   902, 12464,   363, 21152, 29889,  1205, 29892,   278,   289,
+          1191,   475,   338,   451,   825,   372,  2444, 29892,   322,   319,
+         12836,  4225,   278,  1371,   310,   902,  2927,  1319,  7875, 29892,
+          2379,   618,   261,   278,  9427, 29892,  2522,  4774,   280,   278,
+           409,   351,   913, 29892,   322, 26631,   278,   274,  4201,   304,
+         17749,  1797,  1090,   278,  7205, 29889,    13,  1576,  1510,  5680,
+           263,  4320,   310, 29871, 29946, 29900,  8041, 29892,   263,  5735,
+           470, 15554, 29892,   322,   263, 17616,   310, 29871, 29906, 29900,
+          8041, 29889,    13, 29911,   860,  1691,   526,   395, 29896, 29900,
+           363, 16157, 29879,   322,   395, 29945,   363,  8041, 29889,   323,
+           860,  1691,   526,  3625,   472,   278,  3050,   470,   297,  6564,
+           472,   278,   349, 14851,  8034, 29889,    13,  1576,  1510,   338,
+         10624,   491,   349, 14851, 15521, 15944, 29892,   476,  9474,   379,
+          1036, 29889,    13,  1576,  1510,   338, 21955,  4395,   491,   278,
+         27150,  3074, 19184, 15521, 29889,     2]], device='cuda:0')
+<s> The Pittsburg High School Theatre department presents “The Little Mermaid,” the musical!
+This family-friendly show brings your favorite Disney characters to life on the Memorial Auditorium stage.
+Experience the heart-warming story of Princess Ariel, King Triton’s youngest daughter, who wishes to pursue the human Prince Eric in the world above. She bargains with the evil sea witch, Ursula, her aunt, to trade her tail for legs. But, the bargain is not what it seems, and Ariel needs the help of her colorful friends, Flounder the fish, Scuttle the seagull, and Sebastian the crab to restore order under the sea.
+The show features a cast of 40 students, a live orchestra, and a crew of 20 students.
+Tickets are $10 for adults and $5 for students. Tickets are available at the door or in advance at the PHS office.
+The show is directed by PHS Theatre Director, Katie Hays.
+The show is sponsored by the Pittsburg Community Theatre.</s>
+tensor([[    1,  1816, 17365, 29892,   306,   471,   297,   278,  6501,   363,
+         24646,  1048,   445,  4700, 29889,  2688,   526,   763,  1632,   283,
+          1112, 29892,   470,   916, 11840,   763,   393,   541,  2253, 29991,
+          2688,   526,   599,  1048,   278, 27335, 29889,   365,  1862,   310,
+           319,  1529, 29999,  4214,   316,  1338,   411,  7788,   322,  2712,
+           925,   363, 27335, 29991,  1816, 17365,   748,  1423,   963,   714,
+         29889,    13,  4164,   373,   445, 15373,   304,  2343,   304,   278,
+          4700, 29889,    13,  3644,   366,  2343,   727,   515,   445,  1544,
+          1244,   322,  1804,   701,   366,   674,   679,   263, 29871, 29896,
+         29900, 29995,  2313,   792,   373,   596,  1407,   937, 20590,   313,
+          9984,  1854,   366,  2649,   963,   306,  2665,   366,   304,   679,
+           445,  2313,   792,   467,  1670,   526,  2337, 21863,   292,  3889,
+           316,  1338,  2675,   373, 29892,   322,   777,   310]],
+       device='cuda:0')
+<s> Seriously, I was in the dark for ages about this website. They are like Groupon, or other sites like that but better! They are all about the teachers. Lots of AMAZING deals with resources and things just for teachers! Seriously go check them out.
+Click on this photo to head to the website.
+If you head there from this link here and sign up you will get a 10% discount on your very first purchase (Make sure you tell them I sent you to get this discount). There are always amazing free deals going on, and some of
+tensor([[    1,  1816, 17365, 29892,   306,   471,   297,   278,  6501,   363,
+         24646,  1048,   445,  4700, 29889,  2688,   526,   763,  1632,   283,
+          1112, 29892,   470,   916, 11840,   763,   393,   541,  2253, 29991,
+          2688,   526,   599,  1048,   278, 27335, 29889,   365,  1862,   310,
+           319,  1529, 29999,  4214,   316,  1338,   411,  7788,   322,  2712,
+           925,   363, 27335, 29991,  1816, 17365,   748,  1423,   963,   714,
+         29889,    13,  4164,   373,   445, 15373,   304,  2343,   304,   278,
+          4700, 29889,    13,  3644,   366,  2343,   727,   515,   445,  1544,
+          1244,   322,  1804,   701,   366,   674,   679,   263, 29871, 29896,
+         29900, 29995,  2313,   792,   373,   596,  1407,   937, 20590,   313,
+          9984,  1854,   366,  2649,   963,   306,  2665,   366,   304,   679,
+           445,  2313,   792,   467,  1670,   526,  2337, 21863,   292,  3889,
+           316,  1338,  2675,   373, 29892,   322,   777,   310,   278,  1900,
+           316,  1338,   306,   505,  3926,  3595, 29889,    13, 29902,   505,
+         18093,   263,  2846,  2712,   515,   727,   322,   306,   626,  2337,
+          9796,   411,   278, 11029,   310,   278,  9316, 29889,    13, 29902,
+           505,   884,  1063,  9885, 29891,  3307,   304,   367,   263, 15000,
+           269,  4539,   373,   278,  3268, 29889,   306,   505,   263,  2846,
+          9316,   373,   727,   393,   366,   508,   679,   363,   263,  2107,
+          8666, 29889,    13, 29902,   505,   263,  2846,   901,  9316,   373,
+           727, 29892,   577,   748,  1423,   963,   714, 29889,    13, 29902,
+           505,   884,  1063,  9885, 29891,  3307,   304,   367,   263, 15000,
+           269,  4539,   373,   278,  3268, 29889,   306,   505,   263,  2846,
+          9316,   373,   727,   393,   366,   508,   679,   363,   263,  2107,
+          8666, 29889,   306,   505,   263,  2846,   901,  9316,   373,   727,
+         29892,   577,   748,  1423,   963,   714, 29889,    13, 29902,   505,
+           263,  2846,   901,  9316,   373,   727, 29892,   577,   748,  1423,
+           963,   714, 29889]], device='cuda:0')
+<s> Seriously, I was in the dark for ages about this website. They are like Groupon, or other sites like that but better! They are all about the teachers. Lots of AMAZING deals with resources and things just for teachers! Seriously go check them out.
+Click on this photo to head to the website.
+If you head there from this link here and sign up you will get a 10% discount on your very first purchase (Make sure you tell them I sent you to get this discount). There are always amazing free deals going on, and some of the best deals I have ever seen.
+I have bought a few things from there and I am always happy with the quality of the products.
+I have also been lucky enough to be a featured seller on the site. I have a few products on there that you can get for a great price.
+I have a few more products on there, so go check them out.
+I have also been lucky enough to be a featured seller on the site. I have a few products on there that you can get for a great price. I have a few more products on there, so go check them out.
+I have a few more products on there, so go check them out.
+total time :307.69813s, latency :0.52960s, decoding step: 581, large model step: 45, 12.911111111111111
+[2024-02-26 10:16:18,099] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='openwebtext', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-OpenWebText-7b-70b-greedy-2.pt', start=0, end=5, T=0.6, P=1.0, DP=0.99, D=1, B=10, seed=17, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+tensor([[    1, 28962, 29928,  8186, 29979, 29892,  8314,   813,   450,  9870,
+         10974, 24383,  5320,  1757,   373, 24211,  1058,   896,  1497,   750,
+          1063, 18987, 15115,   391, 16661,   304,   367,  8988,   714,  2446,
+          4723,   355, 29892,  2645,   263,  4797,  8753, 22394, 29889, 15512,
+          7668, 15293, 13896,  1501,  1497,   278,  1757,   750,  1063, 20603,
+           491,   278, 16427,   293,  4306,  9413,   391,  2318, 29889,    13,
+            13,  1576, 10974,  1497,   896, 13112,   393,  1023,   310,   278,
+          1757, 29892,  1716, 29871, 29896, 29947, 29892,   750,  1063, 10223,
+           292,   304,  5337, 10974, 13049,   297, 22103, 29892,  8314, 30010,
+         29879,  1473, 29899, 27489,   342,  4272, 29892,  2645,   278,   530,
+         29920,   562,  8373,  8753, 22394,   373,  3786, 29871, 29906, 29945,
+         29889,   530, 29920,   562,  8373,  4207,   943,   278, 25325,   310,
+         13230,   515,   278,  9870,   322,  1570, 13450,  8811]],
+       device='cuda:0')
+<s> SYDNEY, Australia — The Australian police arrested five men on Saturday who they said had been planning terrorist attacks to be carried out next weekend, during a national holiday. Prime Minister Tony Abbott said the men had been inspired by the Islamic State extremist group.
+
+The police said they believed that two of the men, both 18, had been preparing to attack police officers in Melbourne, Australia’s second-largest city, during the Anzac Day holiday on April 25. Anzac Day honors the landing of troops from the Australian and New Zealand Army
+tensor([[    1, 28962, 29928,  8186, 29979, 29892,  8314,   813,   450,  9870,
+         10974, 24383,  5320,  1757,   373, 24211,  1058,   896,  1497,   750,
+          1063, 18987, 15115,   391, 16661,   304,   367,  8988,   714,  2446,
+          4723,   355, 29892,  2645,   263,  4797,  8753, 22394, 29889, 15512,
+          7668, 15293, 13896,  1501,  1497,   278,  1757,   750,  1063, 20603,
+           491,   278, 16427,   293,  4306,  9413,   391,  2318, 29889,    13,
+            13,  1576, 10974,  1497,   896, 13112,   393,  1023,   310,   278,
+          1757, 29892,  1716, 29871, 29896, 29947, 29892,   750,  1063, 10223,
+           292,   304,  5337, 10974, 13049,   297, 22103, 29892,  8314, 30010,
+         29879,  1473, 29899, 27489,   342,  4272, 29892,  2645,   278,   530,
+         29920,   562,  8373,  8753, 22394,   373,  3786, 29871, 29906, 29945,
+         29889,   530, 29920,   562,  8373,  4207,   943,   278, 25325,   310,
+         13230,   515,   278,  9870,   322,  1570, 13450,  8811, 16408,   472,
+          5208,  3466,  5079, 29892, 26459, 29892,   297, 29871, 29896, 29929,
+         29896, 29945, 29892,  2645,  2787,  3362,   306, 29889,    13,    13,
+          1576, 10974,  1497,   896,   750, 25291,   263,  7672,  2650, 29892,
+           263, 29826,   889,  1607, 29892,   263,  3632,   331,  1943, 16427,
+           293,  4306,  7353,   322,   263,  4863,   310,   263,   767,  9963,
+          1048, 19436,   714,   385,  5337, 29889,    13,    13,  1576, 10974,
+          1497,   896,   750,   884, 24383,  2211,   916,  1757, 29892, 24646,
+         29871, 29896, 29947,   304, 29871, 29896, 29929, 29892,  1058,   892,
+          2858,  6021,   310, 18987,   304,  9850,   304,  8713,  2849,   304,
+          8589,   411,   278, 16427,   293,  4306, 29889,    13,    13,  1576,
+         10974,  1497,   896,   750,  1063, 29652,   278,  1757,   363,   777,
+           931, 29889,    13,    13, 30015,  4806,  4658,   393,   445,  5858,
+           756,   766, 14214,   322,  5557,   287, 13900]], device='cuda:0')
+<s> SYDNEY, Australia — The Australian police arrested five men on Saturday who they said had been planning terrorist attacks to be carried out next weekend, during a national holiday. Prime Minister Tony Abbott said the men had been inspired by the Islamic State extremist group.
+
+The police said they believed that two of the men, both 18, had been preparing to attack police officers in Melbourne, Australia’s second-largest city, during the Anzac Day holiday on April 25. Anzac Day honors the landing of troops from the Australian and New Zealand Army Corps at Gallipoli, Turkey, in 1915, during World War I.
+
+The police said they had seized a machete, a hunting knife, a homemade Islamic State flag and a video of a man talking about carrying out an attack.
+
+The police said they had also arrested three other men, ages 18 to 19, who were suspected of planning to travel to Syria to fight with the Islamic State.
+
+The police said they had been monitoring the men for some time.
+
+“We believe that this operation has disrupted and prevented plans
+tensor([[    1,   512,   385, 15593,   411, 14129, 30010, 29879,   796,  1662,
+           365,  4657,   393, 30010, 29879,   731,   304,  4799,  2446,  4723,
+         29892, 14297, 24218, 14985,   262, 16725,   393,   540, 30010, 29879,
+          5279,  1985,   278,  1101,   701,   304,   476,  1384, 29872,  3122,
+         30010, 29879,   612,  3905, 29920,   375, 29889,   405,  2303, 13676,
+           393,   896,   526,  5279,  1346, 23261,   472, 20982,  7014, 30024,
+           363,   278,  3769, 29889,    13,    13,   797,   278, 15593, 29892,
+         14985,   262,   884,  1162,   792,   287,   278,   937,   931,   393,
+          3122, 10018,  1075,   612,  3905, 29920,   375,  1261,   359, 29901,
+            13,    13, 30015,  8439,   892, 15376,   310,  2107,  7014,   322,
+           727,   892,  1784,  1784, 16257,   322,   591, 29616,   304,  4129,
+          4208, 29889,   940, 10437,  2996,   975,   322,  1497,  5129, 29902,
+           281,  9713,  2041,  1708,   366,   590,   716,  3769]],
+       device='cuda:0')
+<s> In an interview with BBC’s Zane Lowe that’s set to air next week, producer Rick Rubin confirmed that he’s currently working the follow up to Kanye West’s Yeezus. NME reports that they are currently “looking at vocal ideas” for the album.
+
+In the interview, Rubin also recounted the first time that West showed him Yeezus demos:
+
+“There were loads of great ideas and there were many many tracks and we listened to everything together. He originally came over and said ‘I wanna come play you my new album
+tensor([[    1,   512,   385, 15593,   411, 14129, 30010, 29879,   796,  1662,
+           365,  4657,   393, 30010, 29879,   731,   304,  4799,  2446,  4723,
+         29892, 14297, 24218, 14985,   262, 16725,   393,   540, 30010, 29879,
+          5279,  1985,   278,  1101,   701,   304,   476,  1384, 29872,  3122,
+         30010, 29879,   612,  3905, 29920,   375, 29889,   405,  2303, 13676,
+           393,   896,   526,  5279,  1346, 23261,   472, 20982,  7014, 30024,
+           363,   278,  3769, 29889,    13,    13,   797,   278, 15593, 29892,
+         14985,   262,   884,  1162,   792,   287,   278,   937,   931,   393,
+          3122, 10018,  1075,   612,  3905, 29920,   375,  1261,   359, 29901,
+            13,    13, 30015,  8439,   892, 15376,   310,  2107,  7014,   322,
+           727,   892,  1784,  1784, 16257,   322,   591, 29616,   304,  4129,
+          4208, 29889,   940, 10437,  2996,   975,   322,  1497,  5129, 29902,
+           281,  9713,  2041,  1708,   366,   590,   716,  3769, 30010,   322,
+           306,  2714,   591,   892,   330, 11586, 11621,   304,   263,  7743,
+          3769, 29889,  1205,   372,  9698,   701,  1641,   263,  2846,  6199,
+           310,  8743,   263, 14928,   310,   443,  4951,  3276,  7014,   393,
+           599,   892,  2107, 29889,    13, 30015,  4806, 30010, 29881,  3013,
+           373, 19866,   304,   963,   322,  1827, 29892,  5129,  5618, 30010,
+         29879,   393, 29973, 30010,   322,   540, 30010, 29881,  1827, 29892,
+          5129, 29902,  1016, 30010, 29873,  1073, 29892,   306,   925,  1754,
+           372,   445,  7250, 16412,   739,   471, 29811,  1821, 29889,   940,
+           471,  2221,   304,   437,   372,   373,   278,  9758, 29889,   940,
+         30010, 29881,  7845,   727,   411,   263,  5702,   322,  2436,   263,
+           716, 23281,  1492,   727, 29889,   940,  5456,   263,   716,  4823,
+           515, 22728, 29889,   739,   471, 29811,  1821,   304,  6505,  3178,
+            13,    13, 29934,   431,   262,   884,  1497]], device='cuda:0')
+<s> In an interview with BBC’s Zane Lowe that’s set to air next week, producer Rick Rubin confirmed that he’s currently working the follow up to Kanye West’s Yeezus. NME reports that they are currently “looking at vocal ideas” for the album.
+
+In the interview, Rubin also recounted the first time that West showed him Yeezus demos:
+
+“There were loads of great ideas and there were many many tracks and we listened to everything together. He originally came over and said ‘I wanna come play you my new album’ and I thought we were gonna listen to a finished album. But it ended up being a few hours of playing a bunch of unfinished ideas that all were great.
+“We’d keep on listening to them and say, ‘What’s that?’ and he’d say, ‘I don’t know, I just made it this morning.’ It was incredible. He was able to do it on the spot. He’d sit there with a track and write a new verse right there. He wrote a new song from scratch. It was incredible to watch.”
+
+Rubin also said
+tensor([[    1,  1551,   323,   300,  3780,   322,   830, 21382,    13,    13,
+          7789,  9789,   350,  1267, 13707, 10266, 29871, 29896, 29906,  5306,
+         29871, 29906, 29900, 29896, 29945,    13,    13, 29902, 30010, 29885,
+           278,  2924,   310, 27922,   393,  4188,   267,   304,  2334,  4129,
+          6142, 29889,  2193, 30010, 29879,   451,   304,  1827,   306,  1016,
+         30010, 29873,  4658,   297,   916,  2305, 30010, 29879,   664, 29889,
+          1205,  3265, 29892,   306,  4658,   393,   565,   306,   437,  1554,
+          6142, 29892,   306,   674, 11581,   263,  3287,   901,   515,   372,
+          1135,   565,   306,   671,  4856,  1683, 30010, 29879,  5314, 29889,
+          1152,  2777, 29892,   306, 30010,   345,  8762,   590,  1914,  4943,
+          4603, 13812,   297,   315, 29892,   773,   590,  1407,  1914,   315,
+           848, 12286,  3489, 29889,  7963,  3730,   306, 30010,   645,  1400,
+           263,  2586,   901,  1048,  1906,   297,   278,  5434]],
+       device='cuda:0')
+<s> On Tetris and Reimplementation
+
+Stephen Brennan • 12 June 2015
+
+I’m the kind of programmer that likes to implement everything myself. That’s not to say I don’t believe in other people’s work. But rather, I believe that if I do something myself, I will gain a lot more from it than if I use someone else’s implementation. For instance, I’ve implemented my own regular expression parser in C, using my very own C data structures library. Hopefully I’ll post a bit more about those in the future
+tensor([[    1,  1551,   323,   300,  3780,   322,   830, 21382,    13,    13,
+          7789,  9789,   350,  1267, 13707, 10266, 29871, 29896, 29906,  5306,
+         29871, 29906, 29900, 29896, 29945,    13,    13, 29902, 30010, 29885,
+           278,  2924,   310, 27922,   393,  4188,   267,   304,  2334,  4129,
+          6142, 29889,  2193, 30010, 29879,   451,   304,  1827,   306,  1016,
+         30010, 29873,  4658,   297,   916,  2305, 30010, 29879,   664, 29889,
+          1205,  3265, 29892,   306,  4658,   393,   565,   306,   437,  1554,
+          6142, 29892,   306,   674, 11581,   263,  3287,   901,   515,   372,
+          1135,   565,   306,   671,  4856,  1683, 30010, 29879,  5314, 29889,
+          1152,  2777, 29892,   306, 30010,   345,  8762,   590,  1914,  4943,
+          4603, 13812,   297,   315, 29892,   773,   590,  1407,  1914,   315,
+           848, 12286,  3489, 29889,  7963,  3730,   306, 30010,   645,  1400,
+           263,  2586,   901,  1048,  1906,   297,   278,  5434, 29889,    13,
+            13, 29902, 30010,   345,   884,  8762,   590,  1914,  1873,   310,
+           323,   300,  3780, 29889,   306, 30010,   345,  2309,   445,   297,
+           263,  2846, 10276, 29892,   541,   278,   697,   306, 30010, 29885,
+          2675,   304,  5193,  1048,  9826,   338,   278,   697,   306,  1258,
+           297,   315, 29889,    13,    13, 29902, 30010,   345,  2337,  1063,
+           263, 13524,   310,   323,   300,  3780, 29889,   306, 30010,   345,
+          5318,   372,   373,   278,  8448, 19415, 29892,   373,   278,   405,
+          2890, 29892,   373,   278, 21989,  2890, 29892,   373,   278,  8448,
+         29883,  4003, 29892,   373,   278,   399,  2236, 29892,   373,   278,
+           360, 29903, 29892,   373,   278, 29871, 29941,  8452, 29892,   373,
+           278,   349,  5550, 29892,   373,   278,   478,  2028, 29892,   373,
+           278,  9609, 29892,   373,   278,  4326, 29892,   373,   278, 18483,
+         29892,   373,   278,   474, 20369, 29892,   373,   278,  5669,  9008,
+         29892,   373,   278,  5669,  1591, 29873, 29892,   373,   278,  1856]],
+       device='cuda:0')
+<s> On Tetris and Reimplementation
+
+Stephen Brennan • 12 June 2015
+
+I’m the kind of programmer that likes to implement everything myself. That’s not to say I don’t believe in other people’s work. But rather, I believe that if I do something myself, I will gain a lot more from it than if I use someone else’s implementation. For instance, I’ve implemented my own regular expression parser in C, using my very own C data structures library. Hopefully I’ll post a bit more about those in the future.
+
+I’ve also implemented my own version of Tetris. I’ve done this in a few languages, but the one I’m going to talk about today is the one I did in C.
+
+I’ve always been a fan of Tetris. I’ve played it on the Gameboy, on the NES, on the SNES, on the Gamecube, on the Wii, on the DS, on the 3DS, on the PSP, on the Vita, on the PC, on the Mac, on the iPhone, on the iPad, on the Android phone, on the Android tablet, on the web
+tensor([[    1,  9626, 12952,   891, 28320,   891,   390,  1799,  5169,  5779,
+           891, 11856, 27822, 29892,  2610, 29871, 29896, 29946, 29892, 29871,
+         29906, 29900, 29896, 29906,  6371,   310,  8046, 29901,  5310,   317,
+         18939,  7618,  4637,   304,  7408,  1023,  5401,   297,  7510, 17960,
+           491,   476,  1508, 18588,   472, 29871, 29947, 29901, 29945, 29941,
+         11278,   382,  1254,    13,    13, 29907, 14404, 29901,  1019,  8045,
+         19914, 29892, 23613,   830,  4011,   322, 17212, 29892,  6371,   310,
+          8046, 10443, 22250,   557,  4922,  1492,  1361,   289,   355,   322,
+           364,  2247,  3448,   515, 10727, 29879,  1358, 29892, 17430,  5310,
+           317, 18939,   313, 29931,  8105,   335,   294, 29899, 29907,   812,
+           898,   744, 29897,  3512,   263,  4922,  1023,   363,  1023,   297,
+           278,  6371,   310,  8046,   373, 27822, 29892,  4444,   701,   670,
+           269,  2158,  7970,   322,  7618,  5921,   304,   278]],
+       device='cuda:0')
+<s> Current Articles | Archives | RSS Feeds | Search Monday, May 14, 2012 Tour of California: Peter Sagan cruises to stage two win in Santa Cruz by Kyle Moore at 8:53 PM EST
+
+Categories: Pro Cycling, Race Reports and Results, Tour of California Young Slovak perfect right hand bend and rides away from Haussler, Howard Peter Sagan (Liquigas-Cannondale) went a perfect two for two in the Tour of California on Monday, setting up his sprint perfectly and cruising to the
+tensor([[    1,  9626, 12952,   891, 28320,   891,   390,  1799,  5169,  5779,
+           891, 11856, 27822, 29892,  2610, 29871, 29896, 29946, 29892, 29871,
+         29906, 29900, 29896, 29906,  6371,   310,  8046, 29901,  5310,   317,
+         18939,  7618,  4637,   304,  7408,  1023,  5401,   297,  7510, 17960,
+           491,   476,  1508, 18588,   472, 29871, 29947, 29901, 29945, 29941,
+         11278,   382,  1254,    13,    13, 29907, 14404, 29901,  1019,  8045,
+         19914, 29892, 23613,   830,  4011,   322, 17212, 29892,  6371,   310,
+          8046, 10443, 22250,   557,  4922,  1492,  1361,   289,   355,   322,
+           364,  2247,  3448,   515, 10727, 29879,  1358, 29892, 17430,  5310,
+           317, 18939,   313, 29931,  8105,   335,   294, 29899, 29907,   812,
+           898,   744, 29897,  3512,   263,  4922,  1023,   363,  1023,   297,
+           278,  6371,   310,  8046,   373, 27822, 29892,  4444,   701,   670,
+           269,  2158,  7970,   322,  7618,  5921,   304,   278,  7408,  1023,
+         15354,   297,  7510, 17960, 29889,   450, 29871, 29906, 29906,  1629,
+          2030, 22250,   557,   713, 29892,  1058,  2113,   278,  8718,  7408,
+           297,  7510, 21974,   373, 16340, 29892,   471,  5331,   714,   491,
+           670,  3815, 25046,  8432,   438,   893, 29892,   322,   769,  4934,
+          1283, 12612, 10727, 29879,  1358,   313, 29954,   279,  1195, 29899,
+          4297,   945,  6191, 29897,   322,   951,  1141, 17430,   313, 24599,
+         23894, 29897,   304,  2125,   278,  5401, 29889,    13, 29908, 29902,
+         29915, 29885,  1407,  9796,   304,  5401,  1449,  1699,   317, 18939,
+          1497, 29889,   376, 29902, 29915, 29885,  1407,  9796,   304,  5401,
+           297,  4565,   310,   278,  3082,  2305, 29889,   306, 29915, 29885,
+          1407,  9796,   304,  5401,   297,  4565,   310,   590,  3815, 29885,
+          1078, 29889,   306, 29915, 29885,  1407,  9796,   304,  5401,   297,
+          4565,   310,   590,  3942, 29889,   306, 29915, 29885,  1407,  9796,
+           304,  5401,   297,  4565,   310,   590,  7875]], device='cuda:0')
+<s> Current Articles | Archives | RSS Feeds | Search Monday, May 14, 2012 Tour of California: Peter Sagan cruises to stage two win in Santa Cruz by Kyle Moore at 8:53 PM EST
+
+Categories: Pro Cycling, Race Reports and Results, Tour of California Young Slovak perfect right hand bend and rides away from Haussler, Howard Peter Sagan (Liquigas-Cannondale) went a perfect two for two in the Tour of California on Monday, setting up his sprint perfectly and cruising to the stage two victory in Santa Cruz. The 22 year old Slovakian, who won the opening stage in Santa Rosa on Sunday, was led out by his teammate Daniel Oss, and then held off Heinrich Haussler (Garmin-Barracuda) and Leigh Howard (GreenEdge) to take the win.
+"I'm very happy to win again," Sagan said. "I'm very happy to win in front of the American people. I'm very happy to win in front of my teammates. I'm very happy to win in front of my family. I'm very happy to win in front of my friends
+tensor([[    1,  2860,  5929, 12818,   304,   278,   970,   363,  1371, 29892,
+           478, 29711, 18923,   505,  8472, 15659,   263,  8939,   342,  6392,
+          1058,   471,  7124,   491,   263,  1559,   322, 17654, 10676, 10899,
+         14886,   373,   498,  1295,  3250,  7250, 29889,    13,    13,  7504,
+          3278,   304,   478, 25014, 29892,   925,  1156, 29871, 29955, 29901,
+         29941, 29900,   263, 29889, 29885, 29889,   373,   498,  1295,  3250,
+         29892,   385, 27008,   368,   767,   471, 15469,   491,   263, 19716,
+          2978,   278, 16572,  5323,   262,  5073,   472,   317,  2029,   273,
+           322,  6932, 29871, 29906, 29929,   386, 18874, 29889,    13,    13,
+          3868,   471,  4586,   304, 13457, 29892,   541,   278,   767,   471,
+           451, 19436, 29769, 29892,  8236,   278,   478, 25014,   304,  6159,
+           714,   304,   278,   970,   297,   278, 26926,   310,  1180,  1218,
+           670,  3942, 29889,    13,    13,   797,   263,  3229]],
+       device='cuda:0')
+<s> After appealing to the public for help, Vancouver Police have successfully identified a pedestrian who was hit by a car and suffered serious injuries on Thursday morning.
+
+According to VPD, just after 7:30 a.m. on Thursday, an elderly man was struck by a vehicle near the SkyTrain station at Slocan and East 29th Avenue.
+
+He was taken to hospital, but the man was not carrying identification, leading the VPD to reach out to the public in the hopes of locating his family.
+
+In a statement
+tensor([[    1,  2860,  5929, 12818,   304,   278,   970,   363,  1371, 29892,
+           478, 29711, 18923,   505,  8472, 15659,   263,  8939,   342,  6392,
+          1058,   471,  7124,   491,   263,  1559,   322, 17654, 10676, 10899,
+         14886,   373,   498,  1295,  3250,  7250, 29889,    13,    13,  7504,
+          3278,   304,   478, 25014, 29892,   925,  1156, 29871, 29955, 29901,
+         29941, 29900,   263, 29889, 29885, 29889,   373,   498,  1295,  3250,
+         29892,   385, 27008,   368,   767,   471, 15469,   491,   263, 19716,
+          2978,   278, 16572,  5323,   262,  5073,   472,   317,  2029,   273,
+           322,  6932, 29871, 29906, 29929,   386, 18874, 29889,    13,    13,
+          3868,   471,  4586,   304, 13457, 29892,   541,   278,   767,   471,
+           451, 19436, 29769, 29892,  8236,   278,   478, 25014,   304,  6159,
+           714,   304,   278,   970,   297,   278, 26926,   310,  1180,  1218,
+           670,  3942, 29889,    13,    13,   797,   263,  3229,  5492,   373,
+         28728, 29892,   478, 25014,  1497,   278,   767,   756,  1063, 15659,
+           322,   670,  3942,   756,  1063,   451,  2164, 29889,    13,  1576,
+           767,  9242,   297, 13457,   411, 10676, 10899, 14886, 29889,    13,
+          1576,  7156,   310,   278, 19716,  9488,   472,   278,  9088,   322,
+           338,  1302,  3372,  1218,   411,   278, 22522, 29889,    13,    13,
+         10773,   650,   411,  2472,  1048,   445, 15134,   338,  4433,   304,
+          1246,   478, 25014, 30010, 29879, 13435,  2459, 28246,   362, 13223,
+           472, 29871, 29953, 29900, 29946, 29899, 29955, 29896, 29955, 29899,
+         29941, 29900, 29896, 29906, 29889,     2]], device='cuda:0')
+<s> After appealing to the public for help, Vancouver Police have successfully identified a pedestrian who was hit by a car and suffered serious injuries on Thursday morning.
+
+According to VPD, just after 7:30 a.m. on Thursday, an elderly man was struck by a vehicle near the SkyTrain station at Slocan and East 29th Avenue.
+
+He was taken to hospital, but the man was not carrying identification, leading the VPD to reach out to the public in the hopes of locating his family.
+
+In a statement released on Friday, VPD said the man has been identified and his family has been notified.
+The man remains in hospital with serious injuries.
+The driver of the vehicle remained at the scene and is cooperating with the investigation.
+
+Anyone with information about this incident is asked to call VPD’s Collision Investigation Unit at 604-717-3012.</s>
+total time :531.04328s, latency :0.84696s, decoding step: 627, large model step: 79, 7.936708860759493

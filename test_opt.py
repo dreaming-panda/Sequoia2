@@ -264,9 +264,11 @@ def run_generation(model_name, batch_size, prompt_len, gen_len, cut_gen_len,
     # Run
     print("benchmark")
     timers("generate-forward").reset()
+    timers("generate-forward").start()
     generate_kwargs = dict(max_new_tokens=execute_gen_len, do_sample=False)
     with torch.no_grad():
         output_ids = model.generate(input_ids=input_ids, **generate_kwargs)
+    timers("generate-forward").stop()
     costs = timers("generate-forward").costs
 
     if use_deepspeed and args.local_rank != 0:
@@ -321,11 +323,11 @@ def run_generation(model_name, batch_size, prompt_len, gen_len, cut_gen_len,
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", type=str, default="facebook/opt-1.3b")
+    parser.add_argument("--model", type=str, default="facebook/opt-30b")
     parser.add_argument("--dummy", action="store_true",
         help="Use dummy weights for benchmark purposes.")
     parser.add_argument("--batch-size", type=int, default=1)
-    parser.add_argument("--prompt-len", type=int, default=512)
+    parser.add_argument("--prompt-len", type=int, default=32)
     parser.add_argument("--gen-len", type=int, default=32)
     parser.add_argument("--cut-gen-len", type=int)
     parser.add_argument("--local_rank", type=int)

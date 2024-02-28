@@ -1,0 +1,12 @@
+[2024-02-13 05:43:36,842] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='openwebtext', growmap='/home/zhuominc/workspace/Sequoia/growmaps/16x48-tree.pt', start=0, end=100, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+769
+total time :15543.97606s, latency :2.83908s, decoding step: 5475, large model step: 868
+[2024-02-14 00:19:54,173] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='openwebtext', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-OpenWebText-7b-70b-greedy.pt', start=0, end=50, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+total time :5718.36017s, latency :2.14814s, decoding step: 2662, large model step: 294
+[2024-02-14 09:56:01,258] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='openwebtext', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-OpenWebText-7b-70b-greedy.pt', start=0, end=50, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+total time :4648.63097s, latency :1.74761s, decoding step: 2660, large model step: 272

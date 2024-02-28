@@ -15,9 +15,9 @@ p = torch.tensor([0.0, 0.5391, 0.1100, 0.0527, 0.0336, 0.0259, 0.0190, 0.0150, 0
 
 max_branch = p.shape[0] - 1
 
-max_depth = 10
+max_depth = 16
 
-max_budget = 128
+max_budget = 512
 
 T = torch.zeros((max_budget + 1, max_depth + 1, max_branch + 1)).fill_(-torch.inf)
 T_max = torch.zeros((max_budget + 1, max_depth + 1))
@@ -55,7 +55,7 @@ for m in tqdm(range(2, max_budget+1)):
 
 results = T.max(dim=2).values
 print(results)
-draft_inference_time = 0.0003
+draft_inference_time = 0.0000
 target_verify_time = [
                  0.03912119388580322,
 0.04097423076629639,
@@ -68,7 +68,7 @@ target_verify_time = [
                     ]
 
 
-valid_budget = [1,2,4,8,16,32,64,128]
+valid_budget = [512]
 
 dec_time = torch.inf
 pairs = None
@@ -137,7 +137,7 @@ grow_map = {
     "size": num_nodes
 }
 
-path = "./growmaps/L40-CNN-68m-13b-stochastic.pt"
+path = "./growmaps/L40-CNN-68m-13b-stochastic-S512.pt"
 
 torch.save(grow_map, path)
 

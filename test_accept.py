@@ -8,7 +8,7 @@ from torch.nn.functional import softmax
 import accelerate
 from accelerate import Accelerator
 import argparse
-from data_converter import convert_dataset, convert_gptprompt_dataset,convert_wiki_dataset, convert_cnn_dataset
+from data_converter import convert_dataset, convert_gptprompt_dataset,convert_wiki_dataset, convert_cnn_dataset, convert_c4_dataset_eval
 import argparse
 from SpecTree import SpecTreeTest
 from CoverTree import CoverTreeTest
@@ -152,7 +152,9 @@ def simulation_greedy_with_tree_fast_benchmark_cover(target_model : GraphInferen
     print(accumated_prob)
     return num_decoding_steps / num_large_model_steps
 
-
+eval_list = list(range(2000))
+import random
+random.shuffle(eval_list)
 
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf", use_fast=False)
 tokenizer.pad_token = tokenizer.eos_token
@@ -163,7 +165,7 @@ elif args.dataset == 'wiki':
 elif args.dataset == 'cnn':
     tokenized_dataset_eval = convert_cnn_dataset(tokenizer=tokenizer).select(list(range(args.start, args.end)))
 else:
-    tokenized_dataset_eval = convert_dataset(tokenizer=tokenizer,file_path=args.dataset).select(list(range(args.start, args.end)))
+    tokenized_dataset_eval = convert_c4_dataset_eval(tokenizer=tokenizer).select(list(range(args.start, args.end)))
 
 data_collator = DataCollatorForLanguageModeling(tokenizer, mlm=False)
 dataloader = DataLoader(tokenized_dataset_eval, batch_size=1, collate_fn=data_collator, shuffle=False)

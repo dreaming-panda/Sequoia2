@@ -1,0 +1,4 @@
+[2024-02-13 01:12:01,070] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='meta-llama/Llama-2-7b-hf', target='meta-llama/Llama-2-70b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/growmaps/L40-CNN-7b-70b-greedy.pt', start=0, end=100, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=1024, Mode='greedy', decay=0.85, negative=False, static=False, offloading=True)
+768
+total time :6875.38036s, latency :1.89144s, decoding step: 3635, large model step: 400

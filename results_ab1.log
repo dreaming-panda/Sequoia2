@@ -1,0 +1,41 @@
+[2024-02-14 20:40:57,766] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/68m_13b/growmaps/L40-CNN-68m-13b-stochastic-S4.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :152.59179s, latency :0.02342s, decoding step: 6516, large model step: 3332, 1.9555822328931574
+[2024-02-14 20:43:59,048] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/68m_13b/growmaps/L40-CNN-68m-13b-stochastic-S8.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :136.77507s, latency :0.02087s, decoding step: 6553, large model step: 2930, 2.236518771331058
+[2024-02-14 20:46:44,410] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/68m_13b/growmaps/L40-CNN-68m-13b-stochastic-S16.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :126.98852s, latency :0.01933s, decoding step: 6570, large model step: 2640, 2.4886363636363638
+[2024-02-14 20:49:20,874] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/68m_13b/growmaps/L40-CNN-68m-13b-stochastic-S32.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :125.63275s, latency :0.01923s, decoding step: 6534, large model step: 2340, 2.792307692307692
+[2024-02-14 20:51:58,169] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/68m_13b/growmaps/L40-CNN-68m-13b-stochastic-S64.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :124.98124s, latency :0.01880s, decoding step: 6647, large model step: 2199, 3.022737608003638
+[2024-02-14 20:54:39,387] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/68m_13b/growmaps/L40-CNN-68m-13b-stochastic-S128.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+[2024-02-14 20:55:46,676] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/68m_13b/growmaps/L40-CNN-68m-13b-stochastic-S4.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :568.53068s, latency :0.02262s, decoding step: 25137, large model step: 12634, 1.9896311540288112
+[2024-02-14 21:05:44,258] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/68m_13b/growmaps/L40-CNN-68m-13b-stochastic-S8.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :498.62317s, latency :0.01999s, decoding step: 24938, large model step: 10888, 2.2904114621601765
+[2024-02-14 21:14:38,851] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/68m_13b/growmaps/L40-CNN-68m-13b-stochastic-S16.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :455.64840s, latency :0.01809s, decoding step: 25182, large model step: 9621, 2.617399438727783
+[2024-02-14 21:22:49,403] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/68m_13b/growmaps/L40-CNN-68m-13b-stochastic-S32.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :458.34797s, latency :0.01831s, decoding step: 25039, large model step: 8685, 2.8830166954519285
+[2024-02-14 21:30:59,538] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/68m_13b/growmaps/L40-CNN-68m-13b-stochastic-S64.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :439.14907s, latency :0.01745s, decoding step: 25163, large model step: 7907, 3.182370051852789
+[2024-02-14 21:38:54,533] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/68m_13b/growmaps/L40-CNN-68m-13b-stochastic-S128.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :449.04854s, latency :0.01801s, decoding step: 24933, large model step: 7207, 3.4595532121548493
+[2024-02-14 21:47:08,678] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/68m_13b/growmaps/L40-CNN-68m-13b-stochastic-S256.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :561.24852s, latency :0.02205s, decoding step: 25450, large model step: 6829, 3.726753551032362
+[2024-02-14 21:57:32,258] [INFO] [real_accelerator.py:161:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='JackFram/llama-68m', target='meta-llama/Llama-2-13b-hf', dataset='cnn', growmap='/home/zhuominc/workspace/Sequoia/68m_13b/growmaps/L40-CNN-68m-13b-stochastic-S512.pt', start=0, end=200, T=0.6, P=1.0, DP=0.99, D=1, B=10, W=32, M=800, Mode='greedy', decay=0.85, negative=False, static=False, offloading=False)
+total time :930.74772s, latency :0.03685s, decoding step: 25255, large model step: 6324, 3.993516761543327

@@ -1,0 +1,12 @@
+Max Length :768, Decode Length :256, Prefix Length :192, inference time:0.038193724632263185s (L40 7B)
+Max Length :768, Decode Length :512, Prefix Length :192, inference time:0.07272305870056152s  (L40 7B)
+Max Length :768, Decode Length :256, Prefix Length :192, inference time:0.07712893390655517s  (L40 13B)
+Max Length :768, Decode Length :512, Prefix Length :192, inference time:0.14208775758743286s  (L40 13B)
+
+Max Length :768, Decode Length :256, Prefix Length :192, inference time:0.03130081462860108s (A100 7B)
+Max Length :768, Decode Length :512, Prefix Length :192, inference time:0.05836149072647095s (A100 7B)
+Max Length :768, Decode Length :256, Prefix Length :192, inference time:0.051166665077209475s(A100 13B)
+Max Length :768, Decode Length :512, Prefix Length :192, inference time:0.10585351037979127s (A100 13B)
+Max Length :768, Decode Length :256, Prefix Length :192, inference time:0.11666619467735291s (A100 33B)
+Max Length :768, Decode Length :512, Prefix Length :192, inference time:0.21870466566085817s (A100 33B)
+
