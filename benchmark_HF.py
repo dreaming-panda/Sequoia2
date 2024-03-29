@@ -26,12 +26,13 @@ draft_model = LlamaForCausalLM_Attn.from_pretrained(args.model, torch_dtype=torc
 T = args.T
 B = args.B
 P = args.P
-LEN = [1,2,4,8,16,32,64, 128]
+LEN = [1]
 prefix = torch.randint(low=3, high=30000, size=(B, P)).cuda()
-past_key_values = draft_model(input_ids = prefix, use_cache=True).past_key_values
+with torch.inference_mode():
+    past_key_values = draft_model(input_ids = prefix, use_cache=True).past_key_values
 
 PERFORMANCE = []
-with torch.no_grad():
+with torch.inference_mode():
     for l in LEN:
 
         sentence = torch.randint(low=3, high=30000, size=(B,  l)).cuda()
